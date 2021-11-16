@@ -35,11 +35,11 @@
 									<form>
 										<div class="form-group user-name-field">
 											<input type="text" class="form-control" placeholder="User name">
-											<div class="field-icon"><i class="ion-person"></i></div>
+											<div class="field-icon"><i class="ion-person" name="nama"></i></div>
 										</div>
 										<div class="form-group margin-bottom-30px forgot-password-field">
 											<input type="password" class="form-control" placeholder="Password">
-											<div class="field-icon"><i class="ion-locked"></i></div>
+											<div class="field-icon"><i class="ion-locked" name="password"></i></div>
 											<a href="javascript:;" class="forgot-password-click">Forgot?</a>
 										</div>
 										<div class="form-group sign-in-btn">
