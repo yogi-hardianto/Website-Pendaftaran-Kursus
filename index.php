@@ -6,7 +6,7 @@ require_once("Koneksi.php");
 require_once("Model/AuthModel.php");
 
 //memanggil file di Controller
-require_once("Controller/AuthModel.php");
+require_once("Controller/AuthController.php");
 
 
 if (isset($_GET['page']) && isset($_GET['aksi'])) {
@@ -20,6 +20,8 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
         $auth = new AuthController();
         if ($aksi == 'view') {
             $auth->index();
+        }else if($aksi == 'daftar'){
+            $auth->daftar();
         }
         // else if ($aksi == 'loginAslab') {
         //     $auth->login_aslab();
