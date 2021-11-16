@@ -2,9 +2,12 @@
 //koneksi 
 require_once("Koneksi.php");
 
+//memanggil file di Model
 require_once("Model/AuthModel.php");
 
+//memanggil file di Controller
 require_once("Controller/AuthModel.php");
+
 
 if (isset($_GET['page']) && isset($_GET['aksi'])) {
     
@@ -17,7 +20,7 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
         $auth = new AuthController();
         if ($aksi == 'view') {
             $auth->index();
-        } 
+        }
         // else if ($aksi == 'loginAslab') {
         //     $auth->login_aslab();
         // } else if ($aksi == 'loginPraktikan') {
