@@ -22,7 +22,10 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
             $auth->index();
         }else if($aksi == 'loginPetugas'){
             $auth->login_petugas();
-        }else {
+        }else if($aksi == 'daftar'){
+            $auth->daftar();
+        }
+        else {
             echo "Method Not Found";
         }
 
