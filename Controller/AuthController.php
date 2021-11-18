@@ -20,8 +20,14 @@ class AuthController
 
     public function daftar()
     {
-        require_once("View/login.php");
+        require_once("View/auth/login.php");
     }
+
+    public function login_petugas()
+    {
+        require_once("View/auth/login_petugas.php");
+    }
+
 
 }
 ?>

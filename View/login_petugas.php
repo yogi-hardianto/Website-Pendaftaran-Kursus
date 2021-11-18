@@ -40,7 +40,6 @@
 										<div class="form-group margin-bottom-30px forgot-password-field">
 											<input type="password" class="form-control" placeholder="Password">
 											<div class="field-icon"><i class="ion-locked" name="password"></i></div>
-											<a href="javascript:;" class="forgot-password-click">Forgot?</a>
 										</div>
 										<div class="form-group sign-in-btn">
 											<input type="submit" class="submit" value="Sign In">
@@ -86,28 +85,6 @@
 							</div>
 						</div>
 						<!-- signup slide end -->
-						<!-- forgot password slide start -->
-						<div class="forgot-password-slide slide">
-							<div class="d-flex height-100-percentage">
-								<div class="align-self-center width-100-percentage">
-									<h3>Forgot Password</h3>
-									<form>
-										<label class="label">Enter your email address to reset your password</label>
-										<div class="form-group user-name-field">
-											<input type="text" class="form-control" placeholder="Email">
-											<div class="field-icon"><i class="ion-ios-email"></i></div>
-										</div>
-										<div class="form-group sign-in-btn">
-											<input type="submit" class="submit" value="Submit">
-										</div>
-									</form>
-									<div class="sign-up-txt">
-										if you remember your password? <a href="javascript:;" class="login-click">login</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- forgot password slide end -->
 					</div>
 				</div>
 			</div>

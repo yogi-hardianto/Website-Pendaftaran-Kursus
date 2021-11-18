@@ -10,15 +10,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
 	<!-- Icon Font -->
-	<link rel="stylesheet" href="assets/fonts/ionicons/css/ionicons.css">
+	<link rel="stylesheet" href="../assets/fonts/ionicons/css/ionicons.css">
 	<!-- Text Font -->
-	<link rel="stylesheet" href="assets/fonts/font.css">
+	<link rel="stylesheet" href="../assets/fonts/font.css">
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap.css">
 	<!-- Normal style CSS -->
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
 	<!-- Normal media CSS -->
-	<link rel="stylesheet" href="assets/css/media.css">
+	<link rel="stylesheet" href="../assets/css/media.css">
 </head>
 <body>
 
@@ -118,11 +118,11 @@
 	</main>
 	<div id="cd-loading-bar" data-scale="1"></div>
 	<!-- JS File -->
-	<script src="assets/js/modernizr.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.js"></script>
-	<script type="text/javascript" src="assets/js/popper.min.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
-	<script src="assets/js/velocity.min.js"></script>
-	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script src="../assets/js/modernizr.js"></script>
+	<script type="text/javascript" src="../assets/js/jquery.js"></script>
+	<script type="text/javascript" src="../assets/js/popper.min.js"></script>
+	<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+	<script src="../assets/js/velocity.min.js"></script>
+	<script type="text/javascript" src="../assets/js/script.js"></script>
 </body>
 </html>

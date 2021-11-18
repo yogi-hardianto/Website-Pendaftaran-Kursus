@@ -20,27 +20,12 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
         $auth = new AuthController();
         if ($aksi == 'view') {
             $auth->index();
-        }else if($aksi == 'daftar'){
-            $auth->daftar();
-        }
-        // else if ($aksi == 'loginAslab') {
-        //     $auth->login_aslab();
-        // } else if ($aksi == 'loginPraktikan') {
-        //     $auth->login_praktikan();
-        // } else if ($aksi == 'authAslab') {
-        //     $auth->authAslab();
-        // } else if ($aksi == 'authPraktikan') {
-        //     $auth->authPraktikan();
-        // } else if ($aksi == 'logout') {
-        //     $auth->logout();
-        // } else if ($aksi == 'daftarPraktikan') {
-        //     $auth->daftarPraktikan();
-        // } else if ($aksi == 'storePraktikan') {
-        //     $auth->storePraktikan();
-        // }
-         else {
+        }else if($aksi == 'loginPetugas'){
+            $auth->login_petugas();
+        }else {
             echo "Method Not Found";
         }
+
     } else {
         echo "Page Not Found";
     }
