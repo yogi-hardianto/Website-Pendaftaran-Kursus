@@ -7,6 +7,7 @@ require_once("Model/AuthModel.php");
 
 //memanggil file di Controller
 require_once("Controller/AuthController.php");
+require_once("Controller/PetugasController.php");
 
 
 if (isset($_GET['page']) && isset($_GET['aksi'])) {
@@ -20,30 +21,37 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
         $auth = new AuthController();
         if ($aksi == 'view') {
             $auth->index();
-        }else if($aksi == 'daftar'){
+        }else if($aksi == 'loginPetugas'){
+            $auth->loginPetugas();
+        }else if($aksi == "authPetugas"){
+            $auth->authPetugas();
+        }else if($aksi == "daftar"){
             $auth->daftar();
         }
-        // else if ($aksi == 'loginAslab') {
-        //     $auth->login_aslab();
-        // } else if ($aksi == 'loginPraktikan') {
-        //     $auth->login_praktikan();
-        // } else if ($aksi == 'authAslab') {
-        //     $auth->authAslab();
-        // } else if ($aksi == 'authPraktikan') {
-        //     $auth->authPraktikan();
-        // } else if ($aksi == 'logout') {
-        //     $auth->logout();
-        // } else if ($aksi == 'daftarPraktikan') {
-        //     $auth->daftarPraktikan();
-        // } else if ($aksi == 'storePraktikan') {
-        //     $auth->storePraktikan();
-        // }
-         else {
+        else {
             echo "Method Not Found";
         }
-    } else {
+    } 
+    
+    else if($page == "petugas"){
+        require_once("View/petugas/index.php");
+
+        if($_SESSION['role'] == 'petugas')
+        {
+            $petugas = new PetugasController();
+            if ($aksi == 'view') {
+                $petugas->index();
+            }else {
+                echo "Method Not Found";
+            }
+         } else {
+            header("location: index.php?page=auth&aksi=loginPetugas");
+         }
+    }
+
+    else {
         echo "Page Not Found";
     }
-} else {
+}else {
     header("location: index.php?page=auth&aksi=view"); //Jangan ada spasi habis location
 }
