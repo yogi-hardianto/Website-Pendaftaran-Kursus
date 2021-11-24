@@ -45,5 +45,11 @@ class AuthController
         }
     }
 
+    public function login_petugas()
+    {
+        require_once("View/login_petugas.php");
+    }
+
+
 }
 ?>

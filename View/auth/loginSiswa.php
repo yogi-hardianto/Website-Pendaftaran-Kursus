@@ -3,7 +3,7 @@
 <head>
 	<title>Ruang Belajar</title>
 	<!-- Site favicon -->
-	<link rel="shortcut icon" href="../assets/images/3586376-book-education-learning-teacher_107951.ico">
+	<link rel="shortcut icon" href="assets/images/3586376-book-education-learning-teacher_107951.ico">
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Google Font -->
