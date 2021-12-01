@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kursus</title>
-    <link rel="stylesheet" href="assets/styleindex.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav>
@@ -12,7 +12,7 @@
             <div class="logo"><a href=''>Website Kursus Online</a></div>
             <div class="menu">
                 <ul>
-                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="index.php?page=auth&aksi=authPetugas">Beranda</a></li>
                     <li><a href="#courses">Kursus</a></li>
                     <li><a href="#tutors">Guru</a></li>
                     <li><a href="#contact">Kontak</a></li>
@@ -24,7 +24,7 @@
     <div class="wrapper">
         <!-- untuk home -->
         <section id="home">
-            <img src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?size=626&ext=jpg&ga=GA1.2.1769275626.1605867161"/>
+            <img src="assets/img/home.jpg"/>
             <div class="kolom">
                 <p class="deskripsi">Belajar Cukup #dirumahaja</p>
                 <h2>Tetap Nyaman, Sehat, Semangat</h2>
@@ -53,7 +53,7 @@
                     didik hari ini.</p>
                 <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
             </div>
-            <img src="https://img.freepik.com/free-vector/online-learning-isometric-concept_1284-17947.jpg?size=626&ext=jpg&ga=GA1.2.1769275626.1605867161"/>
+            <img src="assets/img/home2.jpg"/>
         </section>
 
         <!-- untuk tutors -->
@@ -67,15 +67,15 @@
 
                 <div class="tutor-list">
                     <div class="kartu-tutor">
-                        <img src="assets/images/people.jpg"/>
+                        <img src="assets/img/people.jpg"/>
                         <p>Yogi Hardianto</p>
                     </div>
                     <div class="kartu-tutor">
-                        <img src="assets/images/people.jpg"/>
+                        <img src="assets/img/people.jpg"/>
                         <p>Muhammad Suudi</p>
                     </div>
                     <div class="kartu-tutor">
-                        <img src="assets/images/people.jpg"/>
+                        <img src="assets/img/people.jpg"/>
                         <p>Dian Zur Indah Kumala</p>
                     </div>
                     </div>
