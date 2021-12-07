@@ -28,7 +28,29 @@ class AuthController
         require_once("View/auth/loginPetugas.php");
     }
 
-    //Function authAslab untuk authentication petugas
+    public function loginSiswa()
+    {
+        require_once("View/auth/loginSiswa.php");
+    }
+
+    //Function untuk authentication 
+    public function authSiswa()
+    {
+        $nama = $_POST['nama']; //method post mengambil data
+        $password = $_POST['password'];
+        $data = $this->model->prosesAuthSiswa($nama, $password);
+
+        if($data){// ketika data ada
+            $_SESSION['role'] = 'siswa'; //untuk berpindah kehalaman
+            $_SESSION['siswa'] = $data;
+
+            header("location: index.php?page=siswa&aksi=view&pesan=Berhasil Login");//lihat di index -> namanya routing
+        }else{
+            header("location: index.php?page=auth&aksi=loginSiswa&pesan=Password atau Nama salah");
+        }
+    }
+
+    //Function untuk authentication 
     public function authPetugas()
     {
         $nama = $_POST['nama']; //method post mengambil data
@@ -49,6 +71,29 @@ class AuthController
     {
         require_once("View/login_petugas.php");
     }
+
+     /**
+     * Function store berfungsi untuk memproses data untuk di tambahkan 
+     */
+     public function storeSiswa()
+     {
+         $nama = $_POST['nama'];
+         $password = $_POST['password'];
+         $alamat = $_POST['alamat'];
+         $nomor_hp = $_POST['nomor_hp'];
+         $kelas = $_POST['kelas'];
+         if($this->model->prosesStoreSiswa($nama,$password,$alamat,$nomor_hp,$kelas)){
+             header("location: index.php?page=auth&aksi=view&pesan=Berhasil Daftar");
+         }else{
+             header("location: index.php?page=auth&aksi=daftar&pesan=Gagal Daftar");
+         }
+     }
+     
+     public function logout()
+     {
+         session_destroy();
+         header("location:index.php?page=auth&aksi=view&pesan=Berhasil Logput");
+     }
 
 
 }

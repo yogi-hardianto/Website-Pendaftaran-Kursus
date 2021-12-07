@@ -1,10 +1,10 @@
 <?php
-class PetugasController
+class SiswaController
 {
     private $model;
     public function index()
     {
-        require_once("View/petugas/index.php");
+        require_once("View/siswa/index.php");
     }
 }
 ?>

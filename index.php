@@ -8,7 +8,7 @@ require_once("Model/AuthModel.php");
 //memanggil file di Controller
 require_once("Controller/AuthController.php");
 require_once("Controller/PetugasController.php");
-
+require_once("Controller/SiswaController.php");
 
 if (isset($_GET['page']) && isset($_GET['aksi'])) {
     
@@ -27,6 +27,12 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
             $auth->authPetugas();
         }else if($aksi == "daftar"){
             $auth->daftar();
+        }else if($aksi == 'loginSiswa'){
+            $auth->loginSiswa();
+        }else if($aksi =='authSiswa'){
+            $auth->authSiswa();
+        }else if($aksi =='storeSiswa'){
+            $auth->storeSiswa();
         }
         else {
             echo "Method Not Found";
@@ -46,6 +52,22 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
             }
          } else {
             header("location: index.php?page=auth&aksi=loginPetugas");
+         }
+    }
+
+    else if($page == "siswa"){
+        require_once("View/siswa/index.php");
+
+        if($_SESSION['role'] == 'siswa')
+        {
+            $siswa = new SiswaController();
+            if ($aksi == 'view') {
+                $siswa->index();
+            }else {
+                echo "Method Not Found";
+            }
+         } else {
+            header("location: index.php?page=auth&aksi=loginSiswa");
          }
     }
 

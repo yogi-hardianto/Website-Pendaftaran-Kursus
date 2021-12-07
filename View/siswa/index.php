@@ -6,6 +6,6 @@
     <title>KURSUS RUANG BELAJAR</title>
 </head>
 <body>
-        <h1 style="text-align: center; color:blue; padding-top:20px;">SELAMAT DATANG DI MENU PETUGAS</h1>
+        <h1 style="text-align: center; color:blue; padding-top:20px;">SELAMAT DATANG DI MENU SISWA</h1>
 </body>
 </html>

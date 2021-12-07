@@ -5,15 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/stylesiswa.css">
 	
-	<title>Document</title>
+	<title>Kursus SMP</title>
 </head>
 <body>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form action="index.php?page=auth&aksi=storeSiswa" method="POST">
 			<h1>Daftar Diri</h1>
 			<br><br>
-			<input type="text" placeholder="Name" name="name"/>
+			<input type="text" placeholder="Name" name="nama"/>
 			<input type="password" placeholder="password" name="password"/>
 			<input type="text" placeholder="Alamat" name="alamat"/>
 			<input type="text" placeholder="Nomor HP" name="noHp"/>
@@ -22,25 +22,25 @@
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="index.php?page=auth&aksi=authSiswa" method="POST">
 			<h1>Masuk</h1>
 			<br><br>
-			<input type="text" placeholder="Name" name="name"/>
+			<input type="text" placeholder="Name" name="nama"/>
 			<input type="password" placeholder="password" name="password"/>
 			<button>Masuk</button>
 		</form>
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" name="signIn">Masuk</button>
+		<div class="overlay-panel overlay-left">
+				<h1>Selamat Datang!</h1>
+				<p>Klik masuk untuk login</p>
+				<button class="ghost" name="signIn" id="signIn">Masuk</button>
 			</div>
 			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start journey with us</p>
-				<button class="ghost" name="signUp">Daftar</button>
+				<h1>Hello, Teman!</h1>
+				<p>Klik daftar dan isi data diri untuk mendaftar kursus</p>
+				<button class="ghost" name="signUp" id="signUp">Daftar</button>
 			</div>
 		</div>
 	</div>

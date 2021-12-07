@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/stylesiswa.css">
 	
-	<title>Document</title>
+	<title>Kursus</title>
 </head>
 <body>
 <div class="container" id="container">
@@ -13,16 +13,16 @@
 		<form action="index.php?page=auth&aksi=authPetugas" method="POST">
 			<h1>Masuk</h1>
 			<br><br>
-			<input type="text" placeholder="Name" name="nama"/>
-			<input type="password" placeholder="password" name="password"/>
+			<input type="text" placeholder="Nama" name="nama"/>
+			<input type="password" placeholder="Password" name="password"/>
 			<button>Masuk</button>
 		</form>
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start journey with us</p>
+				<h1>Hello, Petugas!</h1>
+				<p>Selamat Bekerja dan Sukses selalu</p>
 			</div>
 		</div>
 	</div>
