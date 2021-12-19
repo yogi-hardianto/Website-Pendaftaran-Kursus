@@ -9,6 +9,7 @@
 </head>
 <body>
 <div class="container" id="container">
+	<!-- registrasi siswa -->
 	<div class="form-container sign-up-container">
 		<form action="index.php?page=auth&aksi=storeSiswa" method="POST">
 			<h1>Daftar Diri</h1>
@@ -21,6 +22,7 @@
 			<button>Daftar</button>
 		</form>
 	</div>
+	<!-- login Siswa -->
 	<div class="form-container sign-in-container">
 		<form action="index.php?page=auth&aksi=authSiswa" method="POST">
 			<h1>Masuk</h1>
@@ -30,13 +32,16 @@
 			<button>Masuk</button>
 		</form>
 	</div>
+	
 	<div class="overlay-container">
 		<div class="overlay">
+		<!-- di registrasi -->
 		<div class="overlay-panel overlay-left">
 				<h1>Selamat Datang!</h1>
 				<p>Klik masuk untuk login</p>
 				<button class="ghost" name="signIn" id="signIn">Masuk</button>
 			</div>
+		<!-- di login -->
 			<div class="overlay-panel overlay-right">
 				<h1>Hello, Teman!</h1>
 				<p>Klik daftar dan isi data diri untuk mendaftar kursus</p>

@@ -2,16 +2,19 @@
 
 class SiswaModel
 {
-    // public function prosesAuthPet($nama, $password)
-    // {
-    //     $sql = "SELECT * FROM petugas WHERE nama='$nama' and password='$password'";
-    //     $query = koneksi()->query($sql);
-    //     return $query->fetch_assoc();
-    // }
-
+    /**Function get berfungsi untuk mengambil seluruh data siswa
+     * @param integer id berisi id siswa
+     */
+    public function get($id)
+    {
+        $sql = "SELECT * FROM siswa WHERE id=$id";
+        $query = koneksi()->query($sql);
+        return $query->fetch_assoc();
+    }   
 }
 
-//Array Assosiatif
-// $tes = new AuthModel();
-// var_export($tes->prosesAuthPetugas('admin','admin'));
-// die();
+
+// Array Assosiatif
+//  $tes = new SiswaModel();
+//  var_export($tes->get('1'));
+//  die();

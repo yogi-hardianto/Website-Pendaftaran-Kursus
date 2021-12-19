@@ -4,6 +4,7 @@ require_once("Koneksi.php");
 
 //memanggil file di Model
 require_once("Model/AuthModel.php");
+require_once("Model/SiswaModel.php");
 
 //memanggil file di Controller
 require_once("Controller/AuthController.php");
@@ -33,6 +34,8 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
             $auth->authSiswa();
         }else if($aksi =='storeSiswa'){
             $auth->storeSiswa();
+        }else if($aksi == 'logout'){
+            $auth->logout();
         }
         else {
             echo "Method Not Found";
@@ -63,7 +66,10 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
             $siswa = new SiswaController();
             if ($aksi == 'view') {
                 $siswa->index();
-            }else {
+            }else if($aksi == 'edit'){
+                // $siswa->edit();
+            }
+            else {
                 echo "Method Not Found";
             }
          } else {

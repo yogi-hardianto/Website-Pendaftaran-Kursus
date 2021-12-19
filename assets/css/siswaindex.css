@@ -1,0 +1,84 @@
+header{
+    padding: 10px 520px; 
+    background-color: aliceblue; 
+    text-align: center; 
+    font-size: 30px;
+    margin: 5px;
+    position: fixed;
+
+}
+        
+    nav{
+        margin: 5px;
+        padding: 0px;
+        width: 100%;
+        /* background-color:rgb(238, 198, 240) ; */
+    }
+
+        nav ul{
+            margin: 0%;
+            padding: 0%;
+            width: 15%;
+            overflow: auto;
+            list-style-type: none;
+            float: left;
+        }
+
+        ul li{
+            /* padding: 40px 0px 30px 0px; */
+            padding: 0px;
+            margin: 2px;
+            background-color: aliceblue;
+            font-size: 16pt;
+            text-align: center;
+        }
+
+        nav p {
+            width: 80%;
+            float: right;
+            margin-right: 40px;
+
+        }
+
+        a:link, a:visited {
+            /* background-color: rgba(113, 210, 223, 0.568); */
+            color: black;
+            padding: 20px 38px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        /* selected link */
+        a:active , a:hover{
+            background-color: rgb(200, 228, 252);
+        }
+        .tabel{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 400px;
+            padding: 150px 200px 200px 10px;
+            float: none;
+            background-color: rgb(166, 222, 255);
+        }
+
+        .edit{
+            float:right ;
+            font-size: 11pt;
+            background-color: cadetblue;
+            color: white;
+            border: none;
+            width: 100px;
+        }
+        .isi{
+            /* border-style: solid; */
+            padding-right: 240px;
+        }
+        .profil{
+            font-size: 17pt;
+        }
+
+        .fixed{
+            position: fixed;
+            margin-left: px;
+            margin-top: 60px;
+        }
+        
