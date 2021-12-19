@@ -203,6 +203,22 @@ h3 {
     line-height: 50px;
 }
 
+.social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+}
+.social-link a:hover{
+    color: #24262b;
+    background-color: white;
+}
+
 #copyright {
     text-align: center;
     width: 100%;
