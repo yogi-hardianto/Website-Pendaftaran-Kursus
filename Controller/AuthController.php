@@ -33,16 +33,6 @@ class AuthController
         require_once("View/auth/loginSiswa.php");
     }
 
-    public function dataGuru()
-    {
-        require_once("View/petugas/Guru.php");
-    }
-
-    public function dataSiswa()
-    {
-        require_once("View/petugas/Siswa.php");
-    }
-
     //Function untuk authentication 
     public function authSiswa()
     {
