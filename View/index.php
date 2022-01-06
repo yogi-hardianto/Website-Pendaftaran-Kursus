@@ -13,7 +13,7 @@
             <div class="logo"><a href=''>Ruang Belajar</a></div>
             <div class="menu">
                 <ul>
-                    <li><a href="http://localhost/website-pendaftaran-kursus/index.php?page=auth&aksi=view#">Beranda</a></li>
+                    <li><a href="index.php?page=auth&aksi=view">Beranda</a></li>
                     <li><a href="#courses">Kursus</a></li>
                     <li><a href="#tutors">Guru</a></li>
                     <li><a href="#contact">Tentang Kami</a></li>
@@ -110,5 +110,5 @@
             </div>
         </div>
     </div>
-</body>
+</body>                                                                                                                                             
 </html>
