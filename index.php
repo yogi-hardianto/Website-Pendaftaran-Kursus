@@ -68,6 +68,10 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
                 $siswa->index();
             }else if($aksi == 'edit'){
                 // $siswa->edit();
+            }else if($aksi == 'profil'){
+                $siswa->profil();
+            }else if($aksi == 'dashboard'){
+                $siswa->dashboard();
             }
             else {
                 echo "Method Not Found";

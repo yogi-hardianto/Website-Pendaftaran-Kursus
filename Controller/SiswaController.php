@@ -19,5 +19,10 @@ class SiswaController
         extract($datasiswa);
         require_once("View/siswa/index.php");
     }
+
+    public function profil()
+    {
+        require_once("View/siswa/profil.php");
+    }
 }
 ?>

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Siswa | Dashboard</title>
+    <title>Siswa | Profil</title>
 
     <!-- Custom fonts for this template-->
     <script src="https://kit.fontawesome.com/1c0f91b923.js" crossorigin="anonymous"></script>
@@ -55,7 +55,6 @@
                     <span>Profil</span>
                 </a>
             </li>
-
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
@@ -115,11 +114,8 @@
                                 <img class="img-profile rounded-circle"
                                     src="assets/img/people.jpg">
                             </a>
-
                         </li>
-                        
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
 
@@ -127,9 +123,39 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h3><i class="fas fa-fw fa-tachometer-alt"></i> Dashboard <hr></h3>
-                    <img src="assets/img/dashboardsiswa.jpg" style="width: 70rem; height: 30rem;" alt="...">
-    
+                    <h3><i class="fas fa-user-alt mr-2"></i> PROFIL <hr></h3>
+                     <div class="container">
+                        <img src="assets/img/home4.jpeg" width="200" height="200" alt="...">
+                        <div class="container mt-2">
+                            <form action="index.php?page=auth&aksi=storePraktikan" method="POST">
+                                        <div class="form-group">
+                                            <label>Nama : </label>
+                                            <input type="text" class="form-control" name="nama">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password : </label>
+                                            <input type="password" class="form-control" name="npm">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Alamat : </label>
+                                            <input type="password" class="form-control" name="password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>No.Telpon : </label>
+                                            <input type="text" class="form-control" name="no_hp">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Kelas : </label>
+                                            <input type="text" class="form-control" name="no_hp">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Upload Gambar :  </label>
+                                            <input type="file" class="form-control" name="no_hp">
+                                        </div>
+                                        <button type="submit" class="btn btn-success p-2">Update</button>
+                                        <!-- <a href="index.php?page=auth&aksi=view" class="btn btn-danger btn-lg btn-block">Kembali</a> -->
+                                    </form>
+                        </div>
                 </div>
                 <!-- /.container-fluid -->
 
