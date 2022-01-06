@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.php?page=auth&aksi=loginPetugas">
+                <a class="nav-link" href="index.php?page=auth&aksi=Berhasil%20Login">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -56,13 +56,13 @@
                 <a class="nav-link collapsed" href="index.php?page=auth&aksi=dataSiswa" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-user-graduate mr-2"></i>
-                    <span>Data Siswa</span>
+                    <span>Data Guru</span>
                 </a>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="index.php?page=auth&aksi=dataGuru" data-toggle="collapse" data-target="#collapseUtilities"
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Data Guru</span>
@@ -172,56 +172,34 @@
 
                 <!--Dashboard-->
                 <div class="col-md-10 p-5 pt-2">
-                    <h3><i class="fas fa-tachometer-alt mr-2"></i> DASHBOARD </h3><hr>
+                    <h3><i class="fas fa-user-graduate mr-2"></i> Daftar Guru </h3><hr>
 
-                    <div class="row text-white">
-                        <div class="card bg-info ml-3" style="width: 18rem;">
-                            <div class="card-body">
-                                <div class="card-body-icon">
-                                    <i class="fas fa-user-graduate mr-2"></i>
-                                </div>
-                                <h5 class="card-title">Jumlah Mahasiswa</h5>
-                                <div class="display-4">1.000</div>
-                                <a href=""><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
-                            </div>
-                        </div>
+                    <a href="" class="btn btn-primary mb-2"><i class="fas fa-plus-square mr-2"></i>Tambah Data Guru</a>
+                    <table class="table table-striped table-boardered">
+                        <thead>
+                            <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Nama Guru</th>
+                            <th scope="col">No Telepon</th>
+                            <th scope="col">NIP</th>
+                            <th scope="col">Jabatan</th>
+                            <th colspan="3" scope="col">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>Jojo</td>
+                            <td>089411</td>
+                            <td>454588784</td>
+                            <td>Guru Matematika</td>
+                            <td><a href="" class="btn btn-primary">Detail</a></td>
+                            <td><i class="fas fa-edit bg-success p-2 text-white rounded" data-toggle="tooltip" title="Edit"></i></td>
+                            <td><i class="fas fa-trash-alt bg-danger p-2 text-white rounded" data-toggle="tooltip" title="Delete"></i></td>
+                            </tr>
+                        </tbody>
+                        </table>
 
-                        <div class="card bg-success ml-3" style="width: 18rem;">
-                            <div class="card-body">
-                                <div class="card-body-icon">
-                                    <i class="fas fa-fw fa-wrench"></i>
-                                </div>
-                                <h5 class="card-title">Jumlah Guru</h5>
-                                <div class="display-4">1.000</div>
-                                <a href=""><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <!-- Begin Page Content -->
-                <div class="row mt-4"> 
-                    <div class="card ml-5 text-white text-center" style="width: 18rem;">
-                        <div class="card-header bg-danger display-4 pb-4 pb-4">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-danger">INSTAGRAM</h5>
-                            <a href="#" class="btn btn-primary">FOLLOW</a>
-                        </div>
-                        </div>
-
-                        <div class="card ml-5 text-white text-center" style="width: 18rem;">
-                        <div class="card-header bg-info display-4 pb-4 pb-4">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-danger">FACEBOOK</h5>
-                            <a href="#" class="btn btn-primary">LIKE</a>
-                        </div>
-                        </div>
-                </div>
-                <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->

@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.php?page=auth&aksi=loginPetugas">
+                <a class="nav-link" href="index.php?page=auth&aksi=Berhasil%20Login">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -172,56 +172,34 @@
 
                 <!--Dashboard-->
                 <div class="col-md-10 p-5 pt-2">
-                    <h3><i class="fas fa-tachometer-alt mr-2"></i> DASHBOARD </h3><hr>
+                    <h3><i class="fas fa-user-graduate mr-2"></i> Daftar Siswa </h3><hr>
 
-                    <div class="row text-white">
-                        <div class="card bg-info ml-3" style="width: 18rem;">
-                            <div class="card-body">
-                                <div class="card-body-icon">
-                                    <i class="fas fa-user-graduate mr-2"></i>
-                                </div>
-                                <h5 class="card-title">Jumlah Mahasiswa</h5>
-                                <div class="display-4">1.000</div>
-                                <a href=""><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
-                            </div>
-                        </div>
+                    <a href="" class="btn btn-primary mb-2"><i class="fas fa-plus-square mr-2"></i>Tambah Data Siswa</a>
+                    <table class="table table-striped table-boardered">
+                        <thead>
+                            <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Nama Siswa</th>
+                            <th scope="col">No Telepon</th>
+                            <th scope="col">Tempat Tanggal Lahir</th>
+                            <th scope="col">Alamat</th>
+                            <th colspan="3" scope="col">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>Yogi</td>
+                            <td>08966</td>
+                            <td>Surabaya, 22 Agustus 1998</td>
+                            <td>Surabaya - Jawa Timur</td>
+                            <td><a href="" class="btn btn-primary">Detail</a></td>
+                            <td><i class="fas fa-edit bg-success p-2 text-white rounded" data-toggle="tooltip" title="Edit"></i></td>
+                            <td><i class="fas fa-trash-alt bg-danger p-2 text-white rounded" data-toggle="tooltip" title="Delete"></i></td>
+                            </tr>
+                        </tbody>
+                        </table>
 
-                        <div class="card bg-success ml-3" style="width: 18rem;">
-                            <div class="card-body">
-                                <div class="card-body-icon">
-                                    <i class="fas fa-fw fa-wrench"></i>
-                                </div>
-                                <h5 class="card-title">Jumlah Guru</h5>
-                                <div class="display-4">1.000</div>
-                                <a href=""><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <!-- Begin Page Content -->
-                <div class="row mt-4"> 
-                    <div class="card ml-5 text-white text-center" style="width: 18rem;">
-                        <div class="card-header bg-danger display-4 pb-4 pb-4">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-danger">INSTAGRAM</h5>
-                            <a href="#" class="btn btn-primary">FOLLOW</a>
-                        </div>
-                        </div>
-
-                        <div class="card ml-5 text-white text-center" style="width: 18rem;">
-                        <div class="card-header bg-info display-4 pb-4 pb-4">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-danger">FACEBOOK</h5>
-                            <a href="#" class="btn btn-primary">LIKE</a>
-                        </div>
-                        </div>
-                </div>
-                <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->

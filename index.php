@@ -36,6 +36,10 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
             $auth->storeSiswa();
         }else if($aksi == 'logout'){
             $auth->logout();
+        }else if($aksi == 'dataSiswa'){
+            $auth->dataSiswa();
+        }else if($aksi == 'dataGuru'){
+            $auth->dataGuru();
         }
         else {
             echo "Method Not Found";
