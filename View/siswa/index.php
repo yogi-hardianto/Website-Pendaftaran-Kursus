@@ -128,7 +128,7 @@
 
                     <!-- Page Heading -->
                     <h3><i class="fas fa-fw fa-tachometer-alt"></i> Dashboard <hr></h3>
-                    <img src="assets/img/dashboardsiswa.jpg" style="width: 70rem; height: 30rem;" alt="...">
+                    <img src="assets/img/dashboardsiswa.jpg" style="width: 70rem; height: 25rem;" alt="...">
     
                 </div>
                 <!-- /.container-fluid -->
@@ -156,7 +156,6 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
 
 </body>
 </html>

@@ -53,7 +53,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="index.php?page=auth&aksi=dataSiswa" data-toggle="collapse" data-target="#collapseTwo"
+                <a class="nav-link collapsed" href="index.php?page=petugas&aksi=dataSiswa" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-user-graduate mr-2"></i>
                     <span>Data Siswa</span>
@@ -62,7 +62,7 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="index.php?page=auth&aksi=dataGuru" data-toggle="collapse" data-target="#collapseUtilities"
+                <a class="nav-link collapsed" href="index.php?page=petugas&aksi=dataGuru" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Data Guru</span>

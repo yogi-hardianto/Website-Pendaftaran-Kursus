@@ -36,10 +36,6 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
             $auth->storeSiswa();
         }else if($aksi == 'logout'){
             $auth->logout();
-        }else if($aksi == 'dataSiswa'){
-            $auth->dataSiswa();
-        }else if($aksi == 'dataGuru'){
-            $auth->dataGuru();
         }
         else {
             echo "Method Not Found";
@@ -54,7 +50,12 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
             $petugas = new PetugasController();
             if ($aksi == 'view') {
                 $petugas->index();
-            }else {
+            }else if($aksi == 'dataSiswa'){
+                $petugas->dataSiswa();
+            }else if($aksi == 'dataGuru'){
+                $petugas->dataGuru();
+            }
+            else {
                 echo "Method Not Found";
             }
          } else {
@@ -74,8 +75,6 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
                 // $siswa->edit();
             }else if($aksi == 'profil'){
                 $siswa->profil();
-            }else if($aksi == 'dashboard'){
-                $siswa->dashboard();
             }
             else {
                 echo "Method Not Found";

@@ -107,9 +107,9 @@
                     <ul class="navbar-nav ml-auto">
                     
                         <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item  no-arrow">
+                            <a class="nav-link" href="#" role="button"
+                                 aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"> =NamaSiswa=</span>
                                 <img class="img-profile rounded-circle"
                                     src="assets/img/people.jpg">
