@@ -39,7 +39,7 @@
                 </div>
                 <div class="sidebar-brand-text mx-3">=NamaSiswa=</div>
             </a>
-
+            
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
             <a class="nav-link" href="index.php?page=siswa&aksi=view">
@@ -49,7 +49,7 @@
             
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="index.php?page=siswa&aksi=profil" data-toggle="collapse" data-target="#collapseUtilities"
+                <a class="nav-link " href="index.php?page=siswa&aksi=profil"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-address-card"></i>
                     <span>Profil</span>
@@ -58,7 +58,7 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="index.php?page=siswa&aksi=profil" data-toggle="collapse" data-target="#collapseUtilities"
+                <a class="nav-link " href="index.php?page=siswa&aksi=daftarkursus"
                     aria-expanded="true" aria-controls="collapseUtilities">
                         <i class="fas fa-clipboard-list mr-2"></i>
                     <span>Daftar Kursus</span>
@@ -107,9 +107,9 @@
                     <ul class="navbar-nav ml-auto">
                     
                         <!-- Nav Item - User Information -->
-                        <li class="nav-item  no-arrow">
-                            <a class="nav-link" href="#" role="button"
-                                 aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"> =NamaSiswa=</span>
                                 <img class="img-profile rounded-circle"
                                     src="assets/img/people.jpg">
@@ -154,8 +154,9 @@
                                         </div>
                                         <button type="submit" class="btn btn-success p-2">Update</button>
                                         <!-- <a href="index.php?page=auth&aksi=view" class="btn btn-danger btn-lg btn-block">Kembali</a> -->
-                                    </form>
+                                </form>
                         </div>
+                    </div>
                 </div>
                 <!-- /.container-fluid -->
 

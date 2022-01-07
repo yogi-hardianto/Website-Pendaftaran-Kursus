@@ -20,6 +20,11 @@ class SiswaController
         require_once("View/siswa/index.php");
     }
 
+    public function daftarkursus()
+    {
+        require_once("View/siswa/daftarkursus.php");
+    }
+
     public function profil()
     {
         require_once("View/siswa/profil.php");

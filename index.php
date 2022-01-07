@@ -5,6 +5,7 @@ require_once("Koneksi.php");
 //memanggil file di Model
 require_once("Model/AuthModel.php");
 require_once("Model/SiswaModel.php");
+require_once("Model/PetugasModel.php");
 
 //memanggil file di Controller
 require_once("Controller/AuthController.php");
@@ -73,6 +74,8 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
                 $siswa->index();
             }else if($aksi == 'edit'){
                 // $siswa->edit();
+            }else if($aksi == 'daftarkursus'){
+                $siswa->daftarkursus();
             }else if($aksi == 'profil'){
                 $siswa->profil();
             }
