@@ -40,8 +40,8 @@
                 <div class="sidebar-brand-text mx-3">=NamaSiswa=</div>
             </a>
             
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+           <!-- Nav Item - Dashboard -->
+           <li class="nav-item">
             <a class="nav-link" href="index.php?page=siswa&aksi=view">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
@@ -49,32 +49,28 @@
             
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link " href="index.php?page=siswa&aksi=profil"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-address-card"></i>
-                    <span>Profil</span>
-                </a>
+            <a class="nav-link" href="index.php?page=siswa&aksi=profil">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Profil</span></a>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link " href="index.php?page=siswa&aksi=daftarkursus"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                        <i class="fas fa-clipboard-list mr-2"></i>
-                    <span>Daftar Kursus</span>
-                </a>
+            <a class="nav-link" href="index.php?page=siswa&aksi=daftarkursus">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Daftar Kursus</span></a>
             </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="index.php?page=siswa&aksi=daftarkursus">
                 <i class="fas fa-calendar-week mr-2"></i>
                     <span>Jadwal Kursus</span></a>
             </li>
             
             <!-- Pembayaran -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="index.php?page=siswa&aksi=daftarkursus">
                 <i class="fas fa-money-bill mr-2"></i>
                     <span>Pembayaran</span></a>
             </li>

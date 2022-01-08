@@ -15,7 +15,7 @@ class AuthController
     // Function index berfungsi untuk mengatur tampilan awal
     public function index()
     {
-        require_once("View/index.php");
+        require_once("View/auth/index.php");
     }
 
     public function daftar()

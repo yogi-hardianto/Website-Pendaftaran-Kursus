@@ -65,7 +65,7 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
     }
 
     else if($page == "siswa"){
-        require_once("View/siswa/index.php");
+        require_once("View/menu/menusiswa.php");
 
         if($_SESSION['role'] == 'siswa')
         {
