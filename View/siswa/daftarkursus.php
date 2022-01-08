@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Siswa | Profil</title>
+    <title>Siswa | Daftar Kursus</title>
 
     <!-- Custom fonts for this template-->
     <script src="https://kit.fontawesome.com/1c0f91b923.js" crossorigin="anonymous"></script>

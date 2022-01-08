@@ -14,17 +14,11 @@ class PetugasController
     /**Function index berfungsi untuk mengatur tampilan awal halaman siswa*/
     public function index()
     {
-        $id = $_SESSION['petugas']['id'];
-        $datapetugas = $this->model->get($id);
-        extract($datapetugas);
         require_once("View/petugas/index.php");
     }
 
     public function dataSiswa()
     {
-        $id = $_SESSION['petugas']['id'];
-        $datapetugas = $this->model->get($id);
-        extract($datapetugas);
         require_once("View/petugas/Siswa.php");
     }
 

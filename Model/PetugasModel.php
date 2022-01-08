@@ -2,9 +2,6 @@
 
 class PetugasModel
 {
-    /**Function get berfungsi untuk mengambil seluruh data siswa
-     * @param integer id berisi id siswa
-     */
     public function get($id)
     {
         $sql = "SELECT * FROM petugas WHERE id=$id";
@@ -12,7 +9,6 @@ class PetugasModel
         return $query->fetch_assoc();
     }   
 }
-
 
 // Array Assosiatif
 //  $tes = new PetugasModel();
