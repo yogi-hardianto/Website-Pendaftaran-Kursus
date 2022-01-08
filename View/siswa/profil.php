@@ -25,161 +25,72 @@
 </head>
 
 <body id="page-top">
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
 
-    <!-- Page Wrapper -->
-    <div id="wrapper">
+    <!-- Main Content -->
+    <div id="content mt-3">
+        <!-- Begin Page Content -->
+        <div class="container-fluid mt-3">
 
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon ">
-                    <i class="fas fa-user-graduate"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">=NamaSiswa=</div>
-            </a>
-            
-           <!-- Nav Item - Dashboard -->
-           <li class="nav-item">
-            <a class="nav-link" href="index.php?page=siswa&aksi=view">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-            
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-            <a class="nav-link" href="index.php?page=siswa&aksi=profil">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Profil</span></a>
-            </li>
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-            <a class="nav-link" href="index.php?page=siswa&aksi=daftarkursus">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Daftar Kursus</span></a>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.php?page=siswa&aksi=daftarkursus">
-                <i class="fas fa-calendar-week mr-2"></i>
-                    <span>Jadwal Kursus</span></a>
-            </li>
-            
-            <!-- Pembayaran -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.php?page=siswa&aksi=daftarkursus">
-                <i class="fas fa-money-bill mr-2"></i>
-                    <span>Pembayaran</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-        </ul>
-        <!-- End of Sidebar -->
-
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
-            <div id="content">
-
-                <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                    
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"> =NamaSiswa=</span>
-                                <img class="img-profile rounded-circle"
-                                    src="assets/img/people.jpg">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <h3><i class="fas fa-user-alt mr-2"></i> PROFIL <hr></h3>
-                     <div class="container">
-                        <img src="assets/img/home4.jpeg" width="200" height="200" alt="...">
-                        <div class="container mt-2">
-                            <form action="index.php?page=auth&aksi=storePraktikan" method="POST">
-                                        <div class="form-group">
-                                            <label>Nama : </label>
-                                            <input type="text" class="form-control" name="nama">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Password : </label>
-                                            <input type="password" class="form-control" name="npm">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Alamat : </label>
-                                            <input type="password" class="form-control" name="password">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>No.Telpon : </label>
-                                            <input type="text" class="form-control" name="no_hp">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Kelas : </label>
-                                            <input type="text" class="form-control" name="no_hp">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Upload Gambar :  </label>
-                                            <input type="file" class="form-control" name="no_hp">
-                                        </div>
-                                        <button type="submit" class="btn btn-success p-2">Update</button>
-                                        <!-- <a href="index.php?page=auth&aksi=view" class="btn btn-danger btn-lg btn-block">Kembali</a> -->
-                                </form>
+            <!-- Page Heading -->
+            <h3><i class="fas fa-user-alt mr-2"></i> PROFIL <hr></h3>
+            <div class="container">
+                <img src="assets/img/home4.jpeg" width="200" height="200" alt="...">
+                <div class="container mt-2">    
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputNama" class="col-sm-2 col-form-label">Nama</label>
+                            <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3">
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- /.container-fluid -->
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputNama" class="col-sm-2 col-form-label">Alamat</label>
+                            <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputNama" class="col-sm-2 col-form-label">Nomor Hp</label>
+                            <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputNama" class="col-sm-2 col-form-label">Kelas</label>
+                            <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <form method="post" class="col-sm-2 col-form-label" enctype="multipart/form-data" action="uploadproses.php">
+                                <label for="inputNama" class="col-sm-2 col-form-label">Upload Foto</label>
+                                <div class="col-sm-10">
+                                    <input type="file" name="gambar">   
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form-group row">
 
+                            <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Update</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
             </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Ruang Belajar 2021</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
-        </div>
-        <!-- End of Content Wrapper -->
+            </div>
 
     </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
+    <!-- End of Main Content -->
 
 </body>
 </html>
