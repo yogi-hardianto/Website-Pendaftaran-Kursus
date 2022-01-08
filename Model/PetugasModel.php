@@ -15,6 +15,6 @@ class PetugasModel
 
 
 // Array Assosiatif
- $tes = new PetugasModel();
- var_export($tes->get('1'));
- die();
+//  $tes = new PetugasModel();
+//  var_export($tes->get('1'));
+//  die();
