@@ -44,7 +44,7 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
     } 
     
     else if($page == "petugas"){
-        require_once("View/petugas/index.php");
+        require_once("View/menu/menupetugas.php");
 
         if($_SESSION['role'] == 'petugas')
         {
@@ -55,6 +55,8 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
                 $petugas->dataSiswa();
             }else if($aksi == 'dataGuru'){
                 $petugas->dataGuru();
+            }else if($aksi == 'dataPembayaran'){
+                $petugas->dataPembayaran();
             }
             else {
                 echo "Method Not Found";

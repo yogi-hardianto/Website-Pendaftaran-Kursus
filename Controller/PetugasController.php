@@ -26,5 +26,10 @@ class PetugasController
     {
         require_once("View/petugas/Guru.php");
     }
+
+    public function dataPembayaran()
+    {
+        require_once("View/petugas/DataPembayaran.php");
+    }
 }
 ?>
