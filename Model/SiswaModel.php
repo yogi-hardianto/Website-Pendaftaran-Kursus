@@ -10,7 +10,17 @@ class SiswaModel
         $sql = "SELECT * FROM siswa WHERE id=$id";
         $query = koneksi()->query($sql);
         return $query->fetch_assoc();
-    }   
+    }  
+
+    /**
+     * Function update berfungsi untuk update data siswa pada database    
+     */
+    public function prosesUpdate($nama, $password, $alamat, $nomor_hp, $kelas, $gambar, $id)
+    {
+        $sql = "UPDATE siswa SET nama='$nama', password='$password', alamat='$alamat', nomor_hp='$nomor_hp' , kelas='$kelas', gambar='$gambar' WHERE id=$id";
+        $query = koneksi()->query($sql);
+        return $query;
+    }
 }
 
 

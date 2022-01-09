@@ -38,11 +38,11 @@
 
         <!-- user id -->
         <div class="form-inline">
-            <a class="d-flex align-items-center float-right ml-auto text-white " href="index.html">
+            <a class="d-flex align-items-center float-right ml-auto text-white " href="index.php?page=auth&aksi=logout">
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-user-graduate"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">=NamaSiswa=</div>
+                <div class="sidebar-brand-text mx-3">Siswa : <?= $_SESSION['siswa']['nama'] ?></div>
             </a>
         </div>
         <!-- end user id -->

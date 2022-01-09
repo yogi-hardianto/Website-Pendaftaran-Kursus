@@ -37,47 +37,46 @@
             <h3><i class="fas fa-user-alt mr-2"></i> PROFIL <hr></h3>
             <div class="container">
                 <div class="d-flex justify-content-center">
-                    <img src="assets/img/home4.jpeg" width="200" height="200" alt="...">
+                    <img src="assets/img/upload/1.jpg" width="200" height="200" alt="...">
                 </div>                
                 <div class="container mt-2">    
-                    <form>
+                    <form action="index.php?page=siswa&aksi=update" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="id" value="<?= $datasiswa['id']?>">
                         <div class="form-group row">
                             <label for="nama" class="col-sm-2 col-form-label">Nama</label>
                             <div class="col-sm-10">
-                            <input type="text" class="form-control" id="nama">
+                            <input type="text" name="nama" class="form-control" value="<?= $datasiswa['nama']?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
                             <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3">
+                            <input type="password" name="password" class="form-control" value="<?= $datasiswa['password']?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
                             <div class="col-sm-10">
-                            <input type="text" class="form-control" id="alamat">
+                            <input type="text" name="alamat" class="form-control" value="<?= $datasiswa['alamat']?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="notlp" class="col-sm-2 col-form-label">Nomor Hp</label>
                             <div class="col-sm-10">
-                            <input type="text" class="form-control" id="notlp">
+                            <input type="text" name="nomor_hp" class="form-control" value="<?= $datasiswa['nomor_hp']?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="kelas" class="col-sm-2 col-form-label">Kelas</label>
                             <div class="col-sm-10">
-                            <input type="text" class="form-control" id="kelas">
+                            <input type="text" name="kelas" class="form-control" value="<?= $datasiswa['kelas']?>">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <form method="post" class="col-sm-2 col-form-label" enctype="multipart/form-data" action="uploadproses.php">
-                                <label for="gambar" class="col-sm-2 col-form-label">Upload Foto</label>
-                                <div class="col-sm-10">
-                                    <input type="file" name="gambar">   
-                                </div>
-                            </form>
+                            <label for="gambar" class="col-sm-2 col-form-label">Upload Foto</label>
+                            <div class="col-sm-10">
+                                <input type="file" name="gambar"">   
+                            </div>
                         </div>
                         <div class="form-group row">
 
