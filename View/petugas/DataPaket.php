@@ -32,7 +32,8 @@
     <div class="col-md-10 p-5 pt-2">
                     <!-- Page Heading -->
                     <div class="container">
-                        <h3><i class="fas fa-user-graduate mr-2"></i> Daftar Calon Siswa </h3><hr>
+                        <h3><i class="fas fa-user-graduate mr-2"></i> Daftar Paket Kursus </h3><hr>
+                        <a href="" class="btn btn-primary mb-3"><i class="fas fa-plus-square mr-3"></i>Tambah Paket Kursus</a>
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>

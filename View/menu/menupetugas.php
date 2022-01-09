@@ -17,27 +17,28 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active ml-3">
-                        <a class="nav-link text-white font-weight-normal" href="index.php?page=petugas&aksi=view">Dashboard</a>
+                        <a class="nav-link text-white font-weight-normal bg-primary" href="index.php?page=petugas&aksi=view">Dashboard</a>
                     </li>
                     <li class="nav-item active ml-3">
-                        <a class="nav-link text-white font-weight-normal" href="index.php?page=petugas&aksi=dataSiswa">Management Siswa</a>
+                        <a class="nav-link text-white font-weight-normal bg-primary" href="index.php?page=petugas&aksi=dataSiswa">Management Siswa</a>
                     </li>
                     <li class="nav-item active ml-3">
-                        <a class="nav-link text-white font-weight-normal" href="index.php?page=petugas&aksi=dataGuru">Management Guru</a>
+                        <a class="nav-link text-white font-weight-normal bg-primary" href="index.php?page=petugas&aksi=dataGuru">Management Guru</a>
                     </li>
                     <li class="nav-item dropdown ml-3">
-                        <a class="nav-link dropdown-toggle text-white font-weight-normal" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Management Pembayaran</a>
+                        <a class="nav-link dropdown-toggle text-white font-weight-normal bg-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Management Pembayaran</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Management Data Praktikum</a>
-                            <a class="dropdown-item" href="#">Management Data Modul</a>
-                            <a class="dropdown-item" href="#">Management Pendaftaran Praktikum</a>
+                            <a class="dropdown-item" href="index.php?page=petugas&aksi=dataPembayaran"> Management Data Verifikasi</a>
+                            <a class="dropdown-item" href="index.php?page=petugas&aksi=dataPaket">Management Paket Kursus</a>
                         </div>
                     </li>
                     <li class="nav-item active ml-3">
-                        <a class="nav-link text-white font-weight-normal" href="#">Management Jadwal</a>
+                        <a class="nav-link text-white font-weight-normal bg-primary" href="index.php?page=mapel&aksi=view">Management Jadwal</a>
                     </li>
                 </ul>
             </div>
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- end menu navbar -->
 
         <!-- user id -->
