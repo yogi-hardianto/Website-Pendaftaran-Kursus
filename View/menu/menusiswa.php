@@ -18,19 +18,19 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active ml-3">
-                        <a class="nav-link text-white font-weight-normal" href="index.php?page=siswa&aksi=view">Dashboard</a>
+                        <a class="nav-link text-white font-weight-normal" href="index.php?page=siswa&aksi=view"><i class="fas fa-fw fa-tachometer-alt mr-2"></i>Dashboard</a>
                     </li>
                     <li class="nav-item active ml-3">
-                        <a class="nav-link text-white font-weight-normal" href="index.php?page=siswa&aksi=profil">Profil</a>
+                        <a class="nav-link text-white font-weight-normal" href="index.php?page=siswa&aksi=profil"><i class="fas fa-user-alt mr-2"></i>Profil</a>
                     </li>
                     <li class="nav-item active ml-3">
                         <a class="nav-link text-white font-weight-normal" href="index.php?page=siswa&aksi=daftarkursus"><i class="fas fa-clipboard-list mr-2"></i>Daftar Kursus</a>
                     </li>
                     <li class="nav-item active ml-3">
-                        <a class="nav-link text-white font-weight-normal" href="#">Jadwal Kursus</a>
+                        <a class="nav-link text-white font-weight-normal" href="index.php?page=siswa&aksi=jadwal"><i class="far fa-calendar-check mr-2"></i>Jadwal Kursus</a>
                     </li>
                     <li class="nav-item active ml-3">
-                        <a class="nav-link text-white font-weight-normal" href="#">Pembayaran</a>
+                        <a class="nav-link text-white font-weight-normal" href="index.php?page=siswa&aksi=pembayaran"><i class="fas fa-money-bill-wave mr-2"></i>Pembayaran</a>
                     </li>                 
                 </ul>
             </div>
