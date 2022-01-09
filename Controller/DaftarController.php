@@ -1,5 +1,5 @@
 <?php
-class MapelController
+class DaftarController
 {
     private $model;
 
@@ -8,7 +8,7 @@ class MapelController
     */
     public function __construct()
     {
-        $this->model = new MapelModel();
+        $this->model = new DaftarModel();
     }
 
      /*Function index berfungsi untuk mengatur tampilan awal halaman siswa*/
@@ -17,12 +17,12 @@ class MapelController
         $id = $_SESSION['petugas']['id'];
         $datasiswa = $this->model->get($id);
         extract($datasiswa);
-        require_once("View/mapel/index.php");
+        require_once("View/daftar/index.php");
     }
     
     public function create()
     {
-        require_once("View/mapel/create.php");
+        require_once("View/daftar/create.php");
     }
 }
 ?>

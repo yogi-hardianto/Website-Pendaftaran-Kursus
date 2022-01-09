@@ -7,12 +7,14 @@ require_once("Model/AuthModel.php");
 require_once("Model/SiswaModel.php");
 require_once("Model/PetugasModel.php");
 require_once("Model/MapelModel.php");
+require_once("Model/DaftarModel.php");
 
 //memanggil file di Controller
 require_once("Controller/AuthController.php");
 require_once("Controller/PetugasController.php");
 require_once("Controller/SiswaController.php");
 require_once("Controller/MapelController.php");
+require_once("Controller/DaftarController.php");
 
 if (isset($_GET['page']) && isset($_GET['aksi'])) {
     
@@ -59,8 +61,6 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
                 $petugas->dataGuru();
             }else if($aksi == 'dataPembayaran'){
                 $petugas->dataPembayaran();
-            }else if($aksi == 'dataPaket'){
-                $petugas->dataPaket();
             }
             else {
                 echo "Method Not Found";
@@ -95,6 +95,23 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
          } else {
             header("location: index.php?page=auth&aksi=loginSiswa");
          }
+        }else if($page == "daftar"){
+            require_once("View/menu/menupetugas.php");
+    
+            if($_SESSION['role'] == 'petugas')
+            {
+                $daftar = new DaftarController();
+                if ($aksi == 'view') {
+                    $daftar->index();
+                }else if($aksi == 'create'){
+                    $daftar->create();
+                }
+                else {
+                    echo "Method Not Found";
+                }
+             } else {
+                header("location: index.php?page=daftar&aksi=view");
+         }
     }else if($page == "mapel"){
         require_once("View/menu/menupetugas.php");
 
@@ -103,8 +120,8 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
             $mapel = new MapelController();
             if ($aksi == 'view') {
                 $mapel->index();
-            }else if($aksi == 'edit'){
-                // $siswa->edit();
+            }else if($aksi == 'create'){
+                $mapel->create();
             }
             else {
                 echo "Method Not Found";

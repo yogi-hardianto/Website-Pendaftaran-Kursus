@@ -29,7 +29,7 @@
                         <a class="nav-link dropdown-toggle text-white font-weight-normal bg-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Management Pembayaran</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="index.php?page=petugas&aksi=dataPembayaran"> Management Data Verifikasi</a>
-                            <a class="dropdown-item" href="index.php?page=petugas&aksi=dataPaket">Management Paket Kursus</a>
+                            <a class="dropdown-item" href="index.php?page=daftar&aksi=view">Management Paket Kursus</a>
                         </div>
                     </li>
                     <li class="nav-item active ml-3">
