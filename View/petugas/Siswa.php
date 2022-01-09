@@ -32,7 +32,7 @@
     <div class="col-md-10 p-5 pt-2">
                     <!-- Page Heading -->
                     <div class="container">
-                        <h3><i class="fas fa-user-graduate mr-2"></i> Daftar Siswa </h3><hr>
+                        <h3><i class="fas fa-user-graduate mr-3"></i> Daftar Siswa </h3><hr>
                         <div class="table-responsive ">
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>

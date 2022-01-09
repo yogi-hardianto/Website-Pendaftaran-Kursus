@@ -32,8 +32,8 @@
     <div class="col-md-10 p-5 pt-2">
                     <!-- Page Heading -->
                     <div class="container">
-                        <h3><i class="fas fa-tachometer-alt mr-2"></i> DASHBOARD </h3><hr>
-                        <div class="row text-white">
+                        <h3><i class="fas fa-tachometer-alt mr-3"></i> DASHBOARD </h3><hr>
+                        <div class="row text-white d-flex justify-content-center">
                             <div class="card bg-info ml-3" style="width: 18rem;">
                                 <div class="card-body">
                                     <div class="card-body-icon">
@@ -48,22 +48,31 @@
                             <div class="card bg-success ml-3" style="width: 18rem;">
                                 <div class="card-body">
                                     <div class="card-body-icon">
-                                        <i class="fas fa-fw fa-wrench"></i>
+                                        <i class="fas fa-chalkboard-teacher"></i>
                                     </div>
                                     <h5 class="card-title">Jumlah Guru</h5>
                                     <div class="display-4">1.000</div>
                                     <a href=""><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
                                 </div>
                             </div>
+                            <div class="card bg-success ml-3" style="width: 18rem;">
+                                <div class="card-body">
+                                    <div class="card-body-icon">
+                                        <i class="fas fa-thumbtack"></i>
+                                    </div>
+                                    <h5 class="card-title">Jumlah Mata Pelajaran</h5>
+                                    <div class="display-4">5</div>
+                                    <a href=""><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <div class="carousel-item active mt-5 d-flex justify-content-center">
+                            <img src="assets/img/payment.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <img src="assets/img/payment.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
                             <img src="..." class="d-block w-100" alt="...">
@@ -78,6 +87,8 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                         </div>
+                    </div>
+                    
                     
                 </div>
     <!-- End of Main Content -->

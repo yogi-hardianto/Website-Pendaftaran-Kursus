@@ -28,59 +28,50 @@
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
-   <!-- Main Content -->
-   <div id="content mt-3">
+    <!-- Main Content -->
+    <div id="content mt-3">
         <!-- Begin Page Content -->
         <div class="container-fluid mt-3">
 
             <!-- Page Heading -->
-            <h3><i class="fas fa-clipboard-list mr-2"></i>Jadwal Ruang Belajar<hr></h3>
-            <div class="d-flex justify-content-center">
-            <div class="col-5">
-                <img src="assets/img/payment.jpg" class="img-thumbnail" alt="...">
-            </div>
-            <!-- form input -->            
-            <div class="container mt-2 col-7">                        
+            <h3><i class="fas fa-user-alt mr-2"></i> Input Harga <hr></h3>
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <img src="assets/img/home4.jpeg" width="200" height="200" alt="...">
+                </div>                
+                <div class="container mt-2">    
                     <form>
-                    <div class="form-group row d-flex justify-content-center">
-                            <label for="inputNama" class=" font-weight-bolder col-form-label"><h2>Input Jadwal</h2></label>
-                        </div> 
                         <div class="form-group row">
-                            <label for="inputNama" class="col-sm-2 col-form-label">Nama Pelajaran</label>
+                            <label for="nama" class="col-sm-2 col-form-label">Nama Pelajaran</label>
                             <div class="col-sm-10">
-                            <input type="nama" class="form-control" id="nama">
+                            <input type="text" class="form-control" id="nama">
                             </div>
-                        </div>                        
+                        </div>
                         <div class="form-group row">
-                            <label for="inputNama" class="col-sm-2 col-form-label">Guru Pengajar</label>
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Harga</label>
                             <div class="col-sm-10">
-                            <input type="text" class="form-control" id="tanggal">
+                            <input type="password" class="form-control" id="inputPassword3">
                             </div>
-                        </div>        
+                        </div>
                         <div class="form-group row">
-                            <label for="inputNama" class="col-sm-2 col-form-label">Hari</label>
-                            <div class="col-sm-10">
-                            <input type="text" class="form-control" id="tanggal">
-                            </div>
-                        </div>   
+                            <form method="post" class="col-sm-2 col-form-label" enctype="multipart/form-data" action="uploadproses.php">
+                                <label for="gambar" class="col-sm-2 col-form-label">Upload Banner</label>
+                                <div class="col-sm-10">
+                                    <input type="file" name="gambar">   
+                                </div>
+                            </form>
+                        </div>
                         <div class="form-group row">
-                            <label for="inputNama" class="col-sm-2 col-form-label">Jam</label>
-                            <div class="col-sm-10">
-                            <input type="text" class="form-control" id="tanggal">
-                            </div>
-                        </div>                 
 
                             <div class="col-sm-10">
                             <button type="submit" class="btn btn-primary">Done</button>
                             </div>
                         </div>
                         
-                    </form>                    
+                    </form>
                 </div>
-                <!-- End form -->
             </div>
-        </div>
-        <!-- /.container-fluid -->
+            </div>
 
     </div>
     <!-- End of Main Content -->

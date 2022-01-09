@@ -32,8 +32,8 @@
     <div class="col-md-10 p-5 pt-2">
                     <!-- Page Heading -->
                     <div class="container">
-                        <h3><i class="fas fa-user-graduate mr-2"></i> Daftar Jadwal Pelajaran </h3><hr>
-                        <a href="" class="btn btn-primary mb-3"><i class="fas fa-plus-square mr-3"></i>Tambah Mata Pelajaran</a>
+                        <h3><i class="fas fa-thumbtack mr-3"></i> Daftar Jadwal Pelajaran </h3><hr>
+                        <a href="index.php?page=mapel&aksi=create" class="btn btn-primary mb-3"><i class="fas fa-plus-square mr-3"></i>Tambah Mata Pelajaran</a>
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>
@@ -41,6 +41,7 @@
                                     <th scope="col">No</th>
                                     <th scope="col">Nama</th>
                                     <th scope="col">Guru Pengajar</th>
+                                    <th scope="col">Hari</th>
                                     <th scope="col">Jam</th>
                                     <th colspan="3" scope="col">Status</th>
                                     </tr>
@@ -50,6 +51,7 @@
                                     <th scope="row">1</th>
                                     <td>Matematika</td>
                                     <td>Suwito</td>
+                                    <td>Senin</td>
                                     <td>15.00 - 16.00</td>
                                     <td><i class="bg-success p-2 text-white rounded d-flex justify-content-center" data-toggle="tooltip" data-placement="top" title="Active">Activate</i></td>
                                     </tr>
@@ -57,6 +59,7 @@
                                     <th scope="row">1</th>
                                     <td>Bahasa Inggris</td>
                                     <td>Jiro</td>
+                                    <td>Senin</td>
                                     <td>12.00 - 13.00</td>
                                     <td><i class="bg-danger p-2 text-white rounded d-flex justify-content-center" data-toggle="tooltip" data-placement="top" title="Not-Active">Deactivate</i></td>
                                     </tr>
