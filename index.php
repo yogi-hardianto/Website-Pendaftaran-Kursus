@@ -6,11 +6,13 @@ require_once("Koneksi.php");
 require_once("Model/AuthModel.php");
 require_once("Model/SiswaModel.php");
 require_once("Model/PetugasModel.php");
+require_once("Model/MapelModel.php");
 
 //memanggil file di Controller
 require_once("Controller/AuthController.php");
 require_once("Controller/PetugasController.php");
 require_once("Controller/SiswaController.php");
+require_once("Controller/MapelController.php");
 
 if (isset($_GET['page']) && isset($_GET['aksi'])) {
     
@@ -57,6 +59,8 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
                 $petugas->dataGuru();
             }else if($aksi == 'dataPembayaran'){
                 $petugas->dataPembayaran();
+            }else if($aksi == 'dataPaket'){
+                $petugas->dataPaket();
             }
             else {
                 echo "Method Not Found";
@@ -91,8 +95,24 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
          } else {
             header("location: index.php?page=auth&aksi=loginSiswa");
          }
-    }
+    }else if($page == "mapel"){
+        require_once("View/menu/menupetugas.php");
 
+        if($_SESSION['role'] == 'petugas')
+        {
+            $mapel = new MapelController();
+            if ($aksi == 'view') {
+                $mapel->index();
+            }else if($aksi == 'edit'){
+                // $siswa->edit();
+            }
+            else {
+                echo "Method Not Found";
+            }
+         } else {
+            header("location: index.php?page=mapel&aksi=view");
+         }
+    }
     else {
         echo "Page Not Found";
     }

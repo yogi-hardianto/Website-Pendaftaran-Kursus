@@ -31,30 +31,53 @@
     <!-- Main Content -->
     <div class="col-md-10 p-5 pt-2">
                     <!-- Page Heading -->
-                    <h3><i class="fas fa-tachometer-alt mr-2"></i> DASHBOARD </h3><hr>
-                    <div class="row text-white">
-                        <div class="card bg-info ml-3" style="width: 18rem;">
-                            <div class="card-body">
-                                <div class="card-body-icon">
-                                    <i class="fas fa-user-graduate mr-2"></i>
+                    <div class="container">
+                        <h3><i class="fas fa-tachometer-alt mr-2"></i> DASHBOARD </h3><hr>
+                        <div class="row text-white">
+                            <div class="card bg-info ml-3" style="width: 18rem;">
+                                <div class="card-body">
+                                    <div class="card-body-icon">
+                                        <i class="fas fa-user-graduate mr-2"></i>
+                                    </div>
+                                    <h5 class="card-title">Jumlah Mahasiswa</h5>
+                                    <div class="display-4">1.000</div>
+                                    <a href=""><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
                                 </div>
-                                <h5 class="card-title">Jumlah Mahasiswa</h5>
-                                <div class="display-4">1.000</div>
-                                <a href=""><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
                             </div>
-                        </div>
 
-                        <div class="card bg-success ml-3" style="width: 18rem;">
-                            <div class="card-body">
-                                <div class="card-body-icon">
-                                    <i class="fas fa-fw fa-wrench"></i>
+                            <div class="card bg-success ml-3" style="width: 18rem;">
+                                <div class="card-body">
+                                    <div class="card-body-icon">
+                                        <i class="fas fa-fw fa-wrench"></i>
+                                    </div>
+                                    <h5 class="card-title">Jumlah Guru</h5>
+                                    <div class="display-4">1.000</div>
+                                    <a href=""><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
                                 </div>
-                                <h5 class="card-title">Jumlah Guru</h5>
-                                <div class="display-4">1.000</div>
-                                <a href=""><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
                             </div>
                         </div>
                     </div>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="..." class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
                     
                 </div>
     <!-- End of Main Content -->
