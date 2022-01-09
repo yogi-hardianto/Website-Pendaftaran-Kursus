@@ -78,8 +78,8 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
             $siswa = new SiswaController();
             if ($aksi == 'view') {
                 $siswa->index();
-            }else if($aksi == 'edit'){
-                // $siswa->edit();
+            }else if($aksi == 'update'){
+                $siswa->update();
             }else if($aksi == 'daftarkursus'){
                 $siswa->daftarkursus();
             }else if($aksi == 'profil'){
