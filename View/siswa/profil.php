@@ -37,7 +37,7 @@
             <h3><i class="fas fa-user-alt mr-2"></i> PROFIL <hr></h3>
             <div class="container">
                 <div class="d-flex justify-content-center">
-                    <img src="assets/img/upload/1.jpg" width="200" height="200" alt="...">
+                    <img src="assets/img/upload/people.jpg" width="200" height="200" alt="...">
                 </div>                
                 <div class="container mt-2">    
                     <form action="index.php?page=siswa&aksi=update" method="POST" enctype="multipart/form-data">

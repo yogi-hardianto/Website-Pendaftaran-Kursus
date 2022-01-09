@@ -12,15 +12,13 @@ class SiswaController
     }
 
     /**Function index berfungsi untuk mengatur tampilan awal halaman siswa*/
-    public function index()
+    public function profil()
     {
         $id = $_SESSION['siswa']['id'];
         $datasiswa = $this->model->get($id);
         extract($datasiswa);
         require_once("View/siswa/profil.php");
     }
-
-    
 
     /**
      * Function update berfungsi untuk menyimpan hasil edit
@@ -47,9 +45,9 @@ class SiswaController
         require_once("View/siswa/daftarkursus.php");
     }
 
-    public function profil()
+    public function dashboard()
     {
-        require_once("View/siswa/profil.php");
+        require_once("View/siswa/index.php");
     }
 
     public function jadwal()

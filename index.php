@@ -77,13 +77,13 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
         {
             $siswa = new SiswaController();
             if ($aksi == 'view') {
-                $siswa->index();
+                $siswa->profil();
             }else if($aksi == 'update'){
                 $siswa->update();
             }else if($aksi == 'daftarkursus'){
                 $siswa->daftarkursus();
-            }else if($aksi == 'profil'){
-                $siswa->profil();
+            }else if($aksi == 'dashboard'){
+                $siswa->dashboard();
             }else if($aksi == 'jadwal'){
                 $siswa->jadwal();
             }else if($aksi == 'pembayaran'){
