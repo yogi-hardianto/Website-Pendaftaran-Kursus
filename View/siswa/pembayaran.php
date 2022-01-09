@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Siswa | Profil</title>
+    <title></title>
 
     <!-- Custom fonts for this template-->
     <script src="https://kit.fontawesome.com/1c0f91b923.js" crossorigin="anonymous"></script>
@@ -34,47 +34,33 @@
         <div class="container-fluid mt-3">
 
             <!-- Page Heading -->
-            <h3><i class="fas fa-user-alt mr-2"></i> PROFIL <hr></h3>
-            <div class="container">
-                <div class="d-flex justify-content-center">
-                    <img src="assets/img/home4.jpeg" width="200" height="200" alt="...">
-                </div>                
-                <div class="container mt-2">    
+            <h3><i class="fas fa-money-bill-wave"></i> Pembayaran <hr></h3>
+            <div class="d-flex justify-content-center">
+            <div class="col-5">
+                <img src="assets/img/payment.jpg" class="img-thumbnail" alt="...">
+            </div>
+            <!-- form input -->            
+            <div class="container mt-2 col-7">                        
                     <form>
+                    <div class="form-group row d-flex justify-content-center">
+                            <label for="inputNama" class=" font-weight-bolder col-form-label"><h2>Ruang Belajar</h2></label>
+                        </div> 
                         <div class="form-group row">
-                            <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                            <label for="inputNama" class="col-sm-2 col-form-label">Nama</label>
                             <div class="col-sm-10">
-                            <input type="text" class="form-control" id="nama">
+                            <input type="nama" class="form-control" id="nama">
                             </div>
-                        </div>
+                        </div>                        
                         <div class="form-group row">
-                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <label for="inputNama" class="col-sm-2 col-form-label">Tanggal</label>
                             <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3">
+                            <input type="text" class="form-control" id="tanggal">
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
-                            <div class="col-sm-10">
-                            <input type="text" class="form-control" id="alamat">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="notlp" class="col-sm-2 col-form-label">Nomor Hp</label>
-                            <div class="col-sm-10">
-                            <input type="text" class="form-control" id="notlp">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="kelas" class="col-sm-2 col-form-label">Kelas</label>
-                            <div class="col-sm-10">
-                            <input type="text" class="form-control" id="kelas">
-                            </div>
-                        </div>
+                        </div>                        
                         <div class="form-group row">
                             <form method="post" class="col-sm-2 col-form-label" enctype="multipart/form-data" action="uploadproses.php">
-                                <label for="gambar" class="col-sm-2 col-form-label">Upload Foto</label>
-                                <div class="col-sm-10">
+                                <label for="inputNama" class="col-sm-3 col-form-label">Upload Bukti Bayar</label>
+                                <div class="col-sm-9">
                                     <input type="file" name="gambar">   
                                 </div>
                             </form>
@@ -82,14 +68,16 @@
                         <div class="form-group row">
 
                             <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Update</button>
+                            <button type="submit" class="btn btn-primary">Upload</button>
                             </div>
                         </div>
                         
-                    </form>
+                    </form>                    
                 </div>
+                <!-- End form -->
             </div>
-            </div>
+        </div>
+        <!-- /.container-fluid -->
 
     </div>
     <!-- End of Main Content -->

@@ -29,5 +29,15 @@ class SiswaController
     {
         require_once("View/siswa/profil.php");
     }
+
+    public function jadwal()
+    {
+        require_once("View/siswa/jadwal.php");
+    }
+
+    public function pembayaran()
+    {
+        require_once("View/siswa/pembayaran.php");
+    }
 }
 ?>

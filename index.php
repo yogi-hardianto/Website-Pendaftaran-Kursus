@@ -84,6 +84,10 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
                 $siswa->daftarkursus();
             }else if($aksi == 'profil'){
                 $siswa->profil();
+            }else if($aksi == 'jadwal'){
+                $siswa->jadwal();
+            }else if($aksi == 'pembayaran'){
+                $siswa->pembayaran();
             }
             else {
                 echo "Method Not Found";
