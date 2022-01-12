@@ -74,6 +74,12 @@
                             </div>
                         </div>
                         <div class="form-group row">
+                            <label for="gambar" class="col-sm-2 col-form-label">Upload Foto</label>
+                            <div class="col-sm-10">
+                                <input type="file" name="gambar">   
+                            </div>
+                        </div>
+                        <div class="form-group row">
 
                             <div class="col-sm-10">
                                 <input type="submit" class="btn btn-primary" value="Update">

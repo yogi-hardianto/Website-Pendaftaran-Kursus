@@ -44,26 +44,6 @@
                     <div class="d-flex justify-content-between">
                         <!-- Scrollable modal -->
                         <a class="btn btn-primary float-left" role="button" data-toggle="modal" data-target="#exampleModal">Rp.1500000</a>                        
-                        <!-- Modal -->
-                        <div class="modal-dialog modal-dialog-scrollable" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                hello dian
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
                         
                         <a class="btn btn-primary float-right" href="#" role="button">Daftar</a>
                     </div>
