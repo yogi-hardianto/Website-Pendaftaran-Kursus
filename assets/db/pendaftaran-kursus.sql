@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Des 2021 pada 00.59
+-- Waktu pembuatan: 12 Jan 2022 pada 17.24
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.4.10
 
@@ -34,6 +34,13 @@ CREATE TABLE `daftar` (
   `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `daftar`
+--
+
+INSERT INTO `daftar` (`id`, `siswa_id`, `mapel_id`, `status`) VALUES
+(1, 2, 2, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -43,10 +50,18 @@ CREATE TABLE `daftar` (
 CREATE TABLE `guru` (
   `id` int(11) NOT NULL,
   `nama` varchar(100) NOT NULL,
-  `alamat` varchar(50) NOT NULL,
+  `nip` varchar(50) DEFAULT NULL,
   `nomor_hp` varchar(20) NOT NULL,
   `mapel_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `guru`
+--
+
+INSERT INTO `guru` (`id`, `nama`, `nip`, `nomor_hp`, `mapel_id`) VALUES
+(1, '[yogi]', '[siwalan]', '[089]', 0),
+(2, 'yogi', '5555', '089670166722', 2);
 
 -- --------------------------------------------------------
 
@@ -116,16 +131,17 @@ CREATE TABLE `siswa` (
   `password` varchar(20) NOT NULL,
   `alamat` varchar(50) NOT NULL,
   `nomor_hp` varchar(20) NOT NULL,
-  `kelas` varchar(5) NOT NULL
+  `kelas` varchar(5) NOT NULL,
+  `gambar` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `siswa`
 --
 
-INSERT INTO `siswa` (`id`, `nama`, `password`, `alamat`, `nomor_hp`, `kelas`) VALUES
-(1, 'Dian', '123', 'Kediri', '0987654321', '7'),
-(3, 'Yogi', '123', 'Surabaya', '', '8');
+INSERT INTO `siswa` (`id`, `nama`, `password`, `alamat`, `nomor_hp`, `kelas`, `gambar`) VALUES
+(1, 'Dian', '123', 'Kediri', '0987654321', '7', '90101609_b491d9f9e314afaebf30898939ea6c34.jpg'),
+(3, 'Yogi', '123', 'Surabaya', '', '8', NULL);
 
 --
 -- Indexes for dumped tables
@@ -175,13 +191,13 @@ ALTER TABLE `siswa`
 -- AUTO_INCREMENT untuk tabel `daftar`
 --
 ALTER TABLE `daftar`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `guru`
 --
 ALTER TABLE `guru`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `mapel`
