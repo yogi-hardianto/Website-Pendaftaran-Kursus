@@ -19,7 +19,23 @@ class MapelController
         extract($datasiswa);
         require_once("View/mapel/index.php");
     }
+
+    public function indexjadwal()
+    {
+        $id = $_SESSION['petugas']['id'];
+        $datajadwal = $this->model->getjadwal();
+        extract($datajadwal);
+        require_once("View/mapel/index.php");
+    }
     
+    // public function indexsiswa()
+    // {
+    //     $id = $_SESSION['siswa']['id'];
+    //     $datasiswa = $this->model->get($id);
+    //     extract($datasiswa);
+    //     require_once("View/siswa/daftarkursus.php");
+    // }
+
     public function create()
     {
         require_once("View/mapel/create.php");

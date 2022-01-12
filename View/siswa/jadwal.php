@@ -44,6 +44,7 @@
                             <th scope="col">Selasa</th>
                             <th scope="col">Rabu</th>
                             <th scope="col">Kamis</th>
+                            <th scope="col">Jumat</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -52,17 +53,20 @@
                             <td>Bahasa Indonesia</td>
                             <td>IPA</td>
                             <td>Bahasa Inggris</td>
-                            </tr>
-                            <tr>
-                            <td>Matematika</td>
-                            <td>Bahasa Indonesia</td>
-                            <td>IPA</td>
                             <td>Bahasa Inggris</td>
                             </tr>
                             <tr>
                             <td>Matematika</td>
                             <td>Bahasa Indonesia</td>
                             <td>IPA</td>
+                            <td>Bahasa Inggris</td>
+                            <td>Bahasa Inggris</td>
+                            </tr>
+                            <tr>
+                            <td>Matematika</td>
+                            <td>Bahasa Indonesia</td>
+                            <td>IPA</td>
+                            <td>Bahasa Inggris</td>
                             <td>Bahasa Inggris</td>
                             </tr>
                         </tbody>

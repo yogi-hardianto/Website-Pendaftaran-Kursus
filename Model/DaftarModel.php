@@ -10,12 +10,12 @@ class DaftarModel
         $sql = "SELECT * FROM daftar WHERE id=$id";
         $query = koneksi()->query($sql);
         return $query->fetch_assoc();
-    }   
+    }
 }
 
 
 // Array Assosiatif
-//  $tes = new SiswaModel();
-//  var_export($tes->get('1'));
+//  $tes = new DaftarModel();
+//  var_export($tes->getmapel('1'));
 //  die();
 

@@ -122,6 +122,8 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
                 $mapel->index();
             }else if($aksi == 'create'){
                 $mapel->create();
+            }else if($aksi == 'jadwal'){
+                $mapel->indexjadwal();
             }
             else {
                 echo "Method Not Found";

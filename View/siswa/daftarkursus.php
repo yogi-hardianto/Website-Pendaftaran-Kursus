@@ -39,15 +39,23 @@
                 <div class="card">
                     <img src="assets/img/dashboardsiswa.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
+                        <h5 class="card-title">Paket 1</h5>
+                        <p class="card-text">Mapel Matematika, IPA, Bahasa Indonesia dan Bahasa Inggris</p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="alert alert-info">Rp.1500000</button>
+                            <button type="button" class="btn btn-outline-primary">Daftar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                <img src="assets/img/dashboardsiswa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
                     <h5 class="card-title">Paket 1</h5>
                     <p class="card-text">Mapel Matematika, IPA, Bahasa Indonesia dan Bahasa Inggris</p>
                     <div class="d-flex justify-content-between">
-                        <!-- Scrollable modal -->
-                        <a class="btn btn-primary float-left" role="button" data-toggle="modal" data-target="#exampleModal">Rp.1500000</a>                        
-                        
-                        <a class="btn btn-primary float-right" href="#" role="button">Daftar</a>
-                    </div>
-                    
+                            <button type="button" class="alert alert-info">Rp.1500000</button>
+                            <button type="button" class="btn btn-outline-primary">Daftar</button>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -55,7 +63,10 @@
                     <div class="card-body">
                     <h5 class="card-title">Paket 1</h5>
                     <p class="card-text">Mapel Matematika, IPA, Bahasa Indonesia dan Bahasa Inggris</p>
-                    <a class="btn btn-primary" href="#" role="button">Daftar</a>
+                    <div class="d-flex justify-content-between">
+                            <button type="button" class="alert alert-info">Rp.1500000</button>
+                            <button type="button" class="btn btn-outline-primary">Daftar</button>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -63,7 +74,10 @@
                     <div class="card-body">
                     <h5 class="card-title">Paket 1</h5>
                     <p class="card-text">Mapel Matematika, IPA, Bahasa Indonesia dan Bahasa Inggris</p>
-                    <a class="btn btn-primary" href="#" role="button">Daftar</a>
+                    <div class="d-flex justify-content-between">
+                            <button type="button" class="alert alert-info">Rp.1500000</button>
+                            <button type="button" class="btn btn-outline-primary">Daftar</button>
+                        </div>
                     </div>
                 </div>
             </div>
