@@ -37,7 +37,8 @@
             <h3><i class="fas fa-user-alt mr-2"></i> PROFIL <hr></h3>
             <div class="container">
                 <div class="d-flex justify-content-center">
-                    <img src="assets/img/upload/people.jpg" width="200" height="200" alt="...">
+                    <img src="assets/img/upload/<?php echo $datasiswa['gambar'] ?>" width="200" height="200">
+                    <!-- <img src="assets/img/upload/people.jpg" width="200" height="200" alt="..."> -->
                 </div>                
                 <div class="container mt-2">    
                     <form action="index.php?page=siswa&aksi=update" method="POST" enctype="multipart/form-data">
@@ -73,15 +74,10 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="gambar" class="col-sm-2 col-form-label">Upload Foto</label>
-                            <div class="col-sm-10">
-                                <input type="file" name="gambar"">   
-                            </div>
-                        </div>
-                        <div class="form-group row">
 
                             <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Update</button>
+                                <input type="submit" class="btn btn-primary" value="Update">
+                            <!-- <button type="submit" class="btn btn-primary">Update</button> -->
                             </div>
                         </div>
                         
