@@ -33,6 +33,7 @@
                     <!-- Page Heading -->
                     <div class="container">
                         <h3><i class="fas fa-chalkboard-teacher mr-3"></i> Daftar Guru </h3><hr>
+                        <a href="" class="btn btn-primary mb-3"><i class="fas fa-plus-square mr-3"></i>Tambah Guru</a>
                         <div class="table-responsive ">
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>
