@@ -59,15 +59,15 @@
 
                 <div class="tutor-list">
                     <div class="kartu-tutor">
-                        <img src="assets/img/people.jpg"/>
+                        <img src="assets/img/12345.jpg"/>
                         <p>Yogi Hardianto</p>
                     </div>
                     <div class="kartu-tutor">
-                        <img src="assets/img/people.jpg"/>
+                        <img src="assets/img/1234.jpg"/>
                         <p>Muhammad Suudi</p>
                     </div>
                     <div class="kartu-tutor">
-                        <img src="assets/img/people.jpg"/>
+                        <img src="assets/img/123.jpg"/>
                         <p>Dian Zur Indah Kumala</p>
                     </div>
                     </div>

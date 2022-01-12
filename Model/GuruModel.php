@@ -5,17 +5,23 @@ class GuruModel
     /**Function get berfungsi untuk mengambil seluruh data siswa
      * @param integer id berisi id siswa
      */
-    public function get($id)
+    public function get()
     {
-        $sql = "SELECT * FROM guru WHERE id=$id";
+        $sql = "SELECT guru.nama as namaGuru, guru.nomor_hp as nomerGuru, guru.nip as nipGuru, mapel.nama as namaMapel from guru JOIN mapel ON mapel.id = guru.mapel_id";
+
         $query = koneksi()->query($sql);
-        return $query->fetch_assoc();
+        $hasil = [];
+        while($data = $query->fetch_assoc())
+        {
+            $hasil[] = $data;
+        }
+        return $hasil;
     }   
 }
 
 
 // Array Assosiatif
-//  $tes = new SiswaModel();
-//  var_export($tes->get('1'));
+//  $tes = new GuruModel();
+//  var_export($tes->get('2'));
 //  die();
 

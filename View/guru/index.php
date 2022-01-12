@@ -42,21 +42,25 @@
                                     <th scope="col">Nama Guru</th>
                                     <th scope="col">No Telepon</th>
                                     <th scope="col">NIP</th>
-                                    <th scope="col">Jabatan</th>
+                                    <th scope="col">Mata Pelajaran</th>
                                     <th colspan="3" scope="col">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                <?php $no=1;
+                                    foreach($data as $row): ?>
                                     <tr>
-                                    <th scope="row">1</th>
-                                    <td>Yogi</td>
-                                    <td>08966</td>
-                                    <td>555555</td>
-                                    <td>Guru Matematika</td>
-                                    <td><a href="" class="btn btn-primary">Detail</a></td>
-                                    <td><i class="fas fa-edit bg-success p-2 text-white rounded" data-toggle="tooltip" title="Edit"></i></td>
-                                    <td><i class="fas fa-trash-alt bg-danger p-2 text-white rounded" data-toggle="tooltip" title="Delete"></i></td>
+                                        <td><?= $no?></td>
+                                        <td><?= $row['namaGuru']?></td>
+                                        <td><?= $row['nomerGuru']?></td>
+                                        <td><?= $row['nipGuru']?></td>
+                                        <td><?= $row['namaMapel']?></td>
+                                        <td><a href="" class="btn btn-primary">Detail</a></td>
+                                        <td><i class="fas fa-edit bg-success p-2 text-white rounded" data-toggle="tooltip" title="Edit"></i></td>
+                                        <td><i class="fas fa-trash-alt bg-danger p-2 text-white rounded" data-toggle="tooltip" title="Delete"></i></td>
                                     </tr>
+                                <?php $no++;
+                                    endforeach;?>
                                 </tbody>
                             </table>
                         </div>

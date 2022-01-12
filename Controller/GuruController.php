@@ -14,9 +14,8 @@ class GuruController
      /*Function index berfungsi untuk mengatur tampilan awal halaman siswa*/
     public function index()
     {
-        $id = $_SESSION['petugas']['id'];
-        $datasiswa = $this->model->get($id);
-        extract($datasiswa);
+        $data= $this->model->get();
+        extract($data);
         require_once("View/guru/index.php");
     }
     
