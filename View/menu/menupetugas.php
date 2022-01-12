@@ -23,7 +23,7 @@
                         <a class="nav-link text-white font-weight-normal bg-primary" href="index.php?page=petugas&aksi=dataSiswa">Management Siswa</a>
                     </li>
                     <li class="nav-item active ml-3">
-                        <a class="nav-link text-white font-weight-normal bg-primary" href="index.php?page=petugas&aksi=dataGuru">Management Guru</a>
+                        <a class="nav-link text-white font-weight-normal bg-primary" href="index.php?page=guru&aksi=view">Management Guru</a>
                     </li>
                     <li class="nav-item dropdown ml-3">
                         <a class="nav-link dropdown-toggle text-white font-weight-normal bg-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Management Pembayaran</a>

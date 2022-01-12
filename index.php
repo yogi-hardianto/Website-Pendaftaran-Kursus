@@ -8,6 +8,7 @@ require_once("Model/SiswaModel.php");
 require_once("Model/PetugasModel.php");
 require_once("Model/MapelModel.php");
 require_once("Model/DaftarModel.php");
+require_once("Model/GuruModel.php");
 
 //memanggil file di Controller
 require_once("Controller/AuthController.php");
@@ -15,6 +16,7 @@ require_once("Controller/PetugasController.php");
 require_once("Controller/SiswaController.php");
 require_once("Controller/MapelController.php");
 require_once("Controller/DaftarController.php");
+require_once("Controller/GuruController.php");
 
 if (isset($_GET['page']) && isset($_GET['aksi'])) {
     
@@ -57,8 +59,6 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
                 $petugas->index();
             }else if($aksi == 'dataSiswa'){
                 $petugas->dataSiswa();
-            }else if($aksi == 'dataGuru'){
-                $petugas->dataGuru();
             }else if($aksi == 'dataPembayaran'){
                 $petugas->dataPembayaran();
             }
@@ -95,7 +95,7 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
          } else {
             header("location: index.php?page=auth&aksi=loginSiswa");
          }
-        }else if($page == "daftar"){
+    }else if($page == "daftar"){
             require_once("View/menu/menupetugas.php");
     
             if($_SESSION['role'] == 'petugas')
@@ -122,6 +122,23 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
                 $mapel->index();
             }else if($aksi == 'create'){
                 $mapel->create();
+            }
+            else {
+                echo "Method Not Found";
+            }
+         } else {
+            header("location: index.php?page=mapel&aksi=view");
+         }
+    }else if($page == "guru"){
+        require_once("View/menu/menupetugas.php");
+
+        if($_SESSION['role'] == 'petugas')
+        {
+            $guru = new GuruController();
+            if ($aksi == 'view') {
+                $guru->index();
+            }else if($aksi == 'create'){
+                $guru->create();
             }
             else {
                 echo "Method Not Found";
