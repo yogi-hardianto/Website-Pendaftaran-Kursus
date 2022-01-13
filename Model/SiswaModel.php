@@ -21,6 +21,7 @@ class SiswaModel
         $query = koneksi()->query($sql);
         return $query;
     }
+    
 }
 
 
