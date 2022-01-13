@@ -6,7 +6,7 @@
 
  function koneksi()
  {
-     $db_host = "https://auth-db597.hostinger.com/";
+     $db_host = "https://sql597.main-hosting.eu";
      $db_user = "yogi";
      $db_password = "Yogihardianto22";
      $db_database = "u871255742_db_kursus";
