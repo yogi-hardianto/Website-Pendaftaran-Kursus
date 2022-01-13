@@ -6,10 +6,10 @@
 
  function koneksi()
  {
-     $db_host = "127.0.0.1:3306";
+     $db_host = "pendaftaranruangbelajar.online";
      $db_user = "yogi";
      $db_password = "Yogihardianto22";
-     $db_database = "db_kursus";
+     $db_database = "u871255742_db_kursus";
 
 try {
     return new mysqli($db_host,$db_user,$db_password,$db_database);
