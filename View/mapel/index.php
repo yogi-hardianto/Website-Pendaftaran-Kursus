@@ -39,7 +39,7 @@
                                 <thead>
                                     <tr>
                                     <th scope="col">No</th>
-                                    <th scope="col">Nama</th>
+                                    <th scope="col">Mata Pelajaran</th>
                                     <th scope="col">Guru Pengajar</th>
                                     <th scope="col">Hari</th>
                                     <th scope="col">Jam</th>
@@ -47,28 +47,17 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <?php $no=1;
-                                foreach($data as $row): ?>
                                     <tr>
-                                      <td><?= $no?></td>
-                                    <td><?= $row['namaMapel']?></td>
-                                    <td><?= $row['namaGuru']?></td>
-                                    <td><?= $row['hari']?></td>
-                                    <td><?= $row['jam']?></td>
-                                    <td>
-                                    <!-- # nanti di ganti saat modul 3 -->
-                                    <?php if($row['status'] == '0') : ?>
-                                        <a href="index.php?page=daftarprak&aksi=verif&id=<?= $row['idDaftar'];?>" class="btn btn-success">Verif</a>
-                                        <!-- <td><i class="bg-danger p-2 text-white rounded d-flex justify-content-center" data-toggle="tooltip" data-placement="top" title="Not-Active">Deactivate</i></td> -->
-                                    <?php else : ?>
-                                        <a href="index.php?page=daftarprak&aksi=unVerif&id=<?= $row['idDaftar'];?>&idPraktikan=<?= $row['idPraktikan'];?>" class="btn btn-danger">Un-Verif</a>
-                                        <!-- <td><i class="bg-success p-2 text-white rounded d-flex justify-content-center" data-toggle="tooltip" data-placement="top" title="Active">Activate</i></td> --> 
-                                    <?php endif; ?>
-                                </td>
-                            </tr>
-                            <?php $no++;
-                            endforeach;?>                                    
-                                </tbody>
+                                    <th scope="row">1</th>
+                                    <td>Matematika</td>
+                                    <td>Suwito</td>
+                                    <td>Selasa</td>
+                                    <td>08.00-09.00</td>
+                                    <td><a href="" class="btn btn-primary">Detail</a></td>
+                                    <td><i class="fas fa-edit bg-success p-2 text-white rounded" data-toggle="tooltip" title="Edit"></i></td>
+                                    <td><i class="fas fa-trash-alt bg-danger p-2 text-white rounded" data-toggle="tooltip" title="Delete"></i></td>
+                                    </tr>
+                                </tbody>    
                             </table>
                         </div>
                         <script>

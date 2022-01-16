@@ -47,9 +47,7 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
         else {
             echo "Method Not Found";
         }
-    } 
-    
-    else if($page == "petugas"){
+    } else if($page == "petugas"){
         require_once("View/menu/menupetugas.php");
 
         if($_SESSION['role'] == 'petugas')
@@ -123,7 +121,7 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
             }else if($aksi == 'create'){
                 $mapel->create();
             }else if($aksi == 'jadwal'){
-                $mapel->indexjadwal();
+                $mapel->jadwal();
             }
             else {
                 echo "Method Not Found";

@@ -20,13 +20,13 @@ class MapelController
         require_once("View/mapel/index.php");
     }
 
-    public function indexjadwal()
-    {
-        $id = $_SESSION['petugas']['id'];
-        $datajadwal = $this->model->getjadwal();
-        extract($datajadwal);
-        require_once("View/mapel/index.php");
-    }
+    // public function indexjadwal()
+    // {
+    //     $id = $_SESSION['petugas']['id'];
+    //     $datajadwal = $this->model->getjadwal();
+    //     extract($datajadwal);
+    //     require_once("View/mapel/index.php");
+    // }
     
     // public function indexsiswa()
     // {
@@ -35,6 +35,13 @@ class MapelController
     //     extract($datasiswa);
     //     require_once("View/siswa/daftarkursus.php");
     // }
+
+    public function jadwal()
+    {
+        $datamapel = $this->model->getJadwal();
+        extract($datamapel);
+        require_once("View/mapel/index.php");
+    }
 
     public function create()
     {

@@ -39,23 +39,29 @@
                                     <tr>
                                     <th scope="col">No</th>
                                     <th scope="col">Nama Siswa</th>
-                                    <th scope="col">No Telepon</th>
-                                    <th scope="col">Tempat Tanggal Lahir</th>
+                                    <th scope="col">Password</th>
                                     <th scope="col">Alamat</th>
+                                    <th scope="col">No Telepon</th>
+                                    <th scope="col">Kelas</th>
                                     <th colspan="3" scope="col">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                <?php $no=1;
+                                    foreach($datasiswa as $row): ?>
                                     <tr>
-                                    <th scope="row">1</th>
-                                    <td>Yogi</td>
-                                    <td>08966</td>
-                                    <td>Surabaya, 22 Agustus 1998</td>
-                                    <td>Surabaya - Jawa Timur</td>
-                                    <td><a href="" class="btn btn-primary">Detail</a></td>
-                                    <td><i class="fas fa-edit bg-success p-2 text-white rounded" data-toggle="tooltip" title="Edit"></i></td>
-                                    <td><i class="fas fa-trash-alt bg-danger p-2 text-white rounded" data-toggle="tooltip" title="Delete"></i></td>
+                                        <td><?= $no?></td>
+                                        <td><?= $row['nama']?></td>
+                                        <td><?= $row['password']?></td>
+                                        <td><?= $row['alamat']?></td>
+                                        <td><?= $row['nomor_hp']?></td>
+                                        <td><?= $row['kelas']?></td>
+                                        <td><a href="" class="btn btn-primary">Detail</a></td>
+                                        <td><i class="fas fa-edit bg-success p-2 text-white rounded" data-toggle="tooltip" title="Edit"></i></td>
+                                        <td><i class="fas fa-trash-alt bg-danger p-2 text-white rounded" data-toggle="tooltip" title="Delete"></i></td>
                                     </tr>
+                                <?php $no++;
+                                    endforeach;?>
                                 </tbody>
                             </table>
                         </div>

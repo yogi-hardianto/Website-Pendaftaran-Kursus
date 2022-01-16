@@ -12,11 +12,11 @@ class MapelModel
         return $query->fetch_assoc();
     }
 
-    public function getjadwal()
+    public function getJadwal()
     {
-        $sql = "SELECT mapel.nama as namaMapel, guru.nama as namaGuru, hari, jam, status from jadwal
-        join mapel on mapel.id = id_mapel
-        join guru on guru.id = id_guru";
+        $sql = "SELECT mapel.nama as namaMapel, guru.nama as namaGuru, jadwal.hari as hari, jadwal.jam as jam, status FROM jadwal
+        join guru on guru.id = jadwal.id_guru
+        join mapel on mapel.id = jadwal.id_mapel";
         $query = koneksi()->query($sql);
         return $query->fetch_assoc();
     }
@@ -24,7 +24,7 @@ class MapelModel
 
 
 // Array Assosiatif
-//  $tes = new SiswaModel();
-//  var_export($tes->get('1'));
+//  $tes = new MapelModel();
+//  var_export($tes->getjadwal());
 //  die();
 
