@@ -34,13 +34,5 @@ class PetugasController
     {
         require_once("View/petugas/DataPembayaran.php");
     }
-
-    // public function jadwal()
-    // {
-    //     $datajadwal = $this->model->getJadwal();
-    //     extract($datajadwal);
-    //     require_once("View/mapel/index.php");
-    // }
-
 }
 ?>

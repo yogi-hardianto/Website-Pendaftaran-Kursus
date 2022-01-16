@@ -35,8 +35,22 @@
 
             <!-- Page Heading -->
             <h3><i class="fas fa-clipboard-list"></i> Daftar Kursus <hr></h3>
-            <div class="card-deck">
-                <div class="card">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col mb-3">
+                    <div class="card">
+                    <img src="assets/img/dashboardsiswa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Paket 1</h5>
+                        <p class="card-text">Mapel Matematika, IPA, Bahasa Indonesia dan Bahasa Inggris</p>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="alert alert-info">Rp.1500000</button>
+                            <button type="button" class="btn btn-outline-primary">Daftar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
                     <img src="assets/img/dashboardsiswa.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Paket 1</h5>
@@ -46,42 +60,39 @@
                             <button type="button" class="btn btn-outline-primary">Daftar</button>
                         </div>
                     </div>
+                    </div>
                 </div>
-                <div class="card">
-                <img src="assets/img/dashboardsiswa.jpg" class="card-img-top" alt="...">
+                <div class="col mb-3">
+                    <div class="card">
+                    <img src="assets/img/dashboardsiswa.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Paket 1</h5>
-                    <p class="card-text">Mapel Matematika, IPA, Bahasa Indonesia dan Bahasa Inggris</p>
-                    <div class="d-flex justify-content-between">
+                        <p class="card-text">Mapel Matematika, IPA, Bahasa Indonesia dan Bahasa Inggris</p>
+                        <div class="d-flex justify-content-between">
                             <button type="button" class="alert alert-info">Rp.1500000</button>
                             <button type="button" class="btn btn-outline-primary">Daftar</button>
                         </div>
                     </div>
+                    </div>
                 </div>
-                <div class="card">
-                <img src="assets/img/dashboardsiswa.jpg" class="card-img-top" alt="...">
+                <div class="col mb-3">
+                    <div class="card">
+                    <img src="assets/img/dashboardsiswa.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Paket 1</h5>
-                    <p class="card-text">Mapel Matematika, IPA, Bahasa Indonesia dan Bahasa Inggris</p>
-                    <div class="d-flex justify-content-between">
+                        <h5 class="card-title">Paket 1</h5>
+                        <p class="card-text">Mapel Matematika, IPA, Bahasa Indonesia dan Bahasa Inggris</p>
+                        <div class="d-flex justify-content-between">
                             <button type="button" class="alert alert-info">Rp.1500000</button>
                             <button type="button" class="btn btn-outline-primary">Daftar</button>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                <img src="assets/img/dashboardsiswa.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Paket 1</h5>
-                    <p class="card-text">Mapel Matematika, IPA, Bahasa Indonesia dan Bahasa Inggris</p>
-                    <div class="d-flex justify-content-between">
-                            <button type="button" class="alert alert-info">Rp.1500000</button>
-                            <button type="button" class="btn btn-outline-primary">Daftar</button>
-                        </div>
                     </div>
                 </div>
+                
             </div>
+            <!-- page heading end  -->
         </div>
+        <!-- begin page end  -->
         <!-- /.container-fluid -->
 
     </div>

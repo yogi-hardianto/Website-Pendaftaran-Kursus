@@ -38,37 +38,47 @@
             <div class="d-flex justify-content-center">
             <div class="col-5">
                 <img src="assets/img/payment.jpg" class="img-thumbnail" alt="...">
+                <div class="d-flex justify-content-center">
+                    <form action="index.php?page=siswa&aksi=historypembayaran" method="POST">
+                        <button class="center btn btn-outline-info mt-3"><h5>Lihat History Pembayaran</h5></button>
+                    </form>
+                </div>                
             </div>
             <!-- form input -->            
             <div class="container mt-2 col-7">                        
-                    <form>
+                    <form action="index.php?page=siswa&aksi=storeDaftarKursus" method="POST" enctype="multipart/form-data">
                     <div class="form-group row d-flex justify-content-center">
                             <label for="inputNama" class=" font-weight-bolder col-form-label"><h2>Ruang Belajar</h2></label>
                         </div> 
                         <div class="form-group row">
-                            <label for="inputNama" class="col-sm-2 col-form-label">Nama</label>
+                            <label for="nama" class="col-sm-2 col-form-label">Nama</label>
                             <div class="col-sm-10">
-                            <input type="nama" class="form-control" id="nama">
+                            <input type="text" name="nama" class="form-control">
                             </div>
                         </div>                        
                         <div class="form-group row">
                             <label for="inputNama" class="col-sm-2 col-form-label">Tanggal</label>
                             <div class="col-sm-10">
-                            <input type="date" class="form-control" id="tanggal">
+                            <input type="date" name="tglUpload" class="form-control" id="tanggal">
                             </div>
-                        </div>                        
+                        </div>  
+                        <div class="form-group row">
+                            <label for="inputNama" class="col-sm-2 col-form-label">Keterangan</label>
+                            <div class="col-sm-10">
+                            <input type="text" name="keterangan" class="form-control" id="keterangan" >
+                            </div>
+                        </div>                      
                         <div class="form-group row">
                             <form method="post" class="col-sm-2 col-form-label" enctype="multipart/form-data" action="uploadproses.php">
                                 <label for="inputNama" class="col-sm-3 col-form-label">Upload Bukti Bayar</label>
                                 <div class="col-sm-9">
-                                    <input type="file" name="gambar">   
+                                    <input type="file" name="buktiBayar">   
                                 </div>
                             </form>
                         </div>
                         <div class="form-group row">
-
                             <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Upload</button>
+                                <input type="submit" name="Upload" class="btn btn-primary" value="Upload">
                             </div>
                         </div>
                         
@@ -81,6 +91,8 @@
 
     </div>
     <!-- End of Main Content -->
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="assets/js/jssiswa.js"></script>
 </body>
 </html>

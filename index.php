@@ -80,12 +80,12 @@ if (isset($_GET['page']) && isset($_GET['aksi'])) {
                 $siswa->update();
             }else if($aksi == 'daftarkursus'){
                 $siswa->daftarkursus();
-            }else if($aksi == 'dashboard'){
-                $siswa->dashboard();
             }else if($aksi == 'jadwal'){
                 $siswa->jadwal();
             }else if($aksi == 'pembayaran'){
                 $siswa->pembayaran();
+            }else if($aksi == 'historypembayaran'){
+                $siswa->historypembayaran();
             }
             else {
                 echo "Method Not Found";

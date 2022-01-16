@@ -60,11 +60,6 @@ class SiswaController
         require_once("View/siswa/daftarkursus.php");
     }
 
-    public function dashboard()
-    {
-        require_once("View/siswa/index.php");
-    }
-
     public function jadwal()
     {
         require_once("View/siswa/jadwal.php");
@@ -73,6 +68,11 @@ class SiswaController
     public function pembayaran()
     {
         require_once("View/siswa/pembayaran.php");
+    }
+
+    public function historypembayaran()
+    {
+        require_once("View/siswa/historypembayaran.php");
     }
 }
 ?>

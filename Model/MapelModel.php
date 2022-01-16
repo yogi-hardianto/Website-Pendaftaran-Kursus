@@ -17,8 +17,14 @@ class MapelModel
         $sql = "SELECT mapel.nama as namaMapel, guru.nama as namaGuru, jadwal.hari as hari, jadwal.jam as jam, status FROM jadwal
         join guru on guru.id = jadwal.id_guru
         join mapel on mapel.id = jadwal.id_mapel";
+        
         $query = koneksi()->query($sql);
-        return $query->fetch_assoc();
+        $hasil = [];
+        while($datamapel = $query->fetch_assoc())
+        {
+            $hasil[] = $datamapel;
+        }
+        return $hasil;
     }
 }
 

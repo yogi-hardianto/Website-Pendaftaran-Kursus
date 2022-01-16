@@ -18,9 +18,6 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active ml-3">
-                        <a class="nav-link text-white font-weight-normal" href="index.php?page=siswa&aksi=dashboard"><i class="fas fa-fw fa-tachometer-alt mr-2"></i>Dashboard</a>
-                    </li>
-                    <li class="nav-item active ml-3">
                         <a class="nav-link text-white font-weight-normal" href="index.php?page=siswa&aksi=view"><i class="fas fa-user-alt mr-2"></i>Profil</a>
                     </li>
                     <li class="nav-item active ml-3">

@@ -27,14 +27,6 @@ class MapelController
     //     extract($datajadwal);
     //     require_once("View/mapel/index.php");
     // }
-    
-    // public function indexsiswa()
-    // {
-    //     $id = $_SESSION['siswa']['id'];
-    //     $datasiswa = $this->model->get($id);
-    //     extract($datasiswa);
-    //     require_once("View/siswa/daftarkursus.php");
-    // }
 
     public function jadwal()
     {
